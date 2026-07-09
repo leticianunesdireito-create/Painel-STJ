@@ -32,8 +32,10 @@ export interface CasoSTJ {
 }
 
 export interface Repetitivo {
-  tema: string;
+  numero: string; // ex: "Tema 971"
+  temaAssunto: TemaId;
   questao: string;
   status: "julgado" | "em julgamento";
+  data: string; // data da fixação da tese ou da notícia mais recente sobre o tema
   fonte: string;
 }

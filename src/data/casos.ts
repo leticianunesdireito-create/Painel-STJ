@@ -88,6 +88,53 @@ export const casos: CasoSTJ[] = [
       "Risco de exposição limitado à diferença entre o índice aplicado e um índice alternativo (ex.: INCC x IGP-M) sobre o saldo devedor, não ao contrato integral.",
     ],
   },
+  {
+    id: "atraso-04",
+    tema: "atraso-obra",
+    titulo: "Segunda Seção fixa teses sobre atraso na entrega de imóveis do programa Minha Casa, Minha Vida",
+    data: "11/09/2019",
+    resumo:
+      "Julgamento do Tema 996: no crédito associativo do PMCMV, é legal a incidência de juros de obra durante a construção, mas eles não podem ser cobrados no período de atraso imputável exclusivamente à vendedora/incorporadora.",
+    referencia: "Segunda Seção, j. 11/09/2019",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2019/Segunda-Secao-fixa-teses-sobre-atraso-na-entrega-de-imoveis-do-programa-Minha-Casa--Minha-Vida.aspx",
+    teseFixada:
+      "Ultrapassado o prazo para conclusão do empreendimento no PMCMV, não podem ser cobrados encargos/juros de obra incidentes sobre o período de atraso imputável à vendedora; teses limitadas a imóveis residenciais das faixas 1,5, 2 e 3.",
+    temaRepetitivo: "Tema 996",
+    baseLegal: [
+      "Art. 43-A da Lei 4.591/1964 — delimitação do período de atraso indenizável (desconto da tolerância de 180 dias).",
+    ],
+    estrategiaDefesa: [
+      "Em empreendimentos do PMCMV com crédito associativo, suspender a cobrança de juros de obra ao mutuário assim que ultrapassado o prazo contratual de conclusão, evitando questionamento por má aplicação do Tema 996.",
+      "Documentar detalhadamente a causa do atraso para demonstrar, quando cabível, que não é imputável exclusivamente à incorporadora (ex.: fato do agente financeiro público).",
+    ],
+    estrategiaAcordo: [
+      "Compensar eventual cobrança indevida de juros de obra no período de atraso com abatimento no saldo devedor do financiamento, evitando repetição de indébito em dobro.",
+    ],
+    avaliacaoBase: [
+      "Provisionar estorno de juros de obra cobrados durante o período de atraso imputável à incorporadora em contratos PMCMV com crédito associativo (faixas 1,5, 2 e 3).",
+    ],
+  },
+  {
+    id: "atraso-05",
+    tema: "atraso-obra",
+    titulo: "O STJ e o atraso na entrega do imóvel: o entendimento da Corte e as formas de se proteger",
+    data: "15/10/2025",
+    resumo:
+      "Matéria especial do STJ consolida o entendimento da Corte sobre atraso na entrega de imóveis: validade da cláusula de tolerância de 180 dias, presunção de lucros cessantes e orientações para consumidores e empresas se protegerem de litígios.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/15102025-Atraso-na-entrega-do-imovel-o-entendimento-do-STJ-e-as-formas-de-se-proteger.aspx",
+    teseFixada:
+      "Síntese institucional do STJ sobre o tema: tolerância de 180 dias válida, lucros cessantes presumidos após esse prazo, e dever de informação claro ao consumidor como condição de validade das cláusulas contratuais.",
+    baseLegal: ["Art. 43-A da Lei 4.591/1964."],
+    estrategiaDefesa: [
+      "Usar esta matéria institucional como referência de compliance contratual: revisar periodicamente as minutas padrão de contrato de promessa de compra e venda à luz da síntese de entendimentos aqui consolidada.",
+    ],
+    estrategiaAcordo: [
+      "Sem impacto direto em acordos individuais — material de referência institucional, não uma decisão de caso concreto.",
+    ],
+    avaliacaoBase: [
+      "Usar como checklist de auditoria de risco jurídico do time de compliance contratual, sem gerar provisão específica.",
+    ],
+  },
 
   // ---------- Distrato e rescisão contratual ----------
   {
@@ -412,7 +459,7 @@ export const casos: CasoSTJ[] = [
     referencia: "REsp 1.737.992-RO, Rel. Min. Paulo de Tarso Sanseverino, Terceira Turma, j. 20/08/2019",
     fonte: "https://scon.stj.jus.br/jurisprudencia/externo/informativo/?aplicacao=informativo&acao=pesquisar&livre=%40CNOT%3D%27017163%27",
     teseFixada:
-      "A pretensão de restituição de comissão de corretagem e SATI vinculada à resolução do contrato por inadimplemento da incorporadora não se submete à prescrição trienal do art. 206, §3º, CC, mas ao regime da resolução contratual principal.",
+      "A pretensão de restituição de comissão de corretagem e SATI vinculada à resolução do contrato por inadimplemento da incorporadora não se submete à prescrição trienal do art. 206, §3º, CC. Entendimento posteriormente refinado pelo STJ em 2025 (ver caso corretagem-05): prazo prescricional decenal.",
     temaRepetitivo: "Tema 938",
     baseLegal: ["Art. 206, §3º, do Código Civil — afastado neste contexto específico."],
     estrategiaDefesa: [
@@ -448,6 +495,52 @@ export const casos: CasoSTJ[] = [
     ],
     avaliacaoBase: [
       "Eliminar da provisão qualquer expectativa de regresso ou corresponsabilidade financeira de corretores por atraso/vício de obra — risco concentrado 100% na incorporadora.",
+    ],
+  },
+  {
+    id: "corretagem-05",
+    tema: "corretagem",
+    titulo: "STJ define prazo decenal para devolução de comissão de corretagem",
+    data: "26/08/2025",
+    resumo:
+      "A Segunda Seção definiu que o prazo para o consumidor pedir a restituição de comissão de corretagem, no contexto de atraso na entrega do imóvel, é de dez anos (Tema 938), superando a incerteza sobre prazos mais curtos aplicados anteriormente.",
+    referencia: "Segunda Seção",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/26082025-Prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos--define-Segunda-Secao.aspx",
+    teseFixada:
+      "O prazo prescricional para a pretensão de restituição de comissão de corretagem vinculada a atraso na entrega do imóvel é o decenal (art. 205 do CC), fixando parâmetro uniforme para o Tema 938.",
+    temaRepetitivo: "Tema 938",
+    baseLegal: ["Art. 205 do Código Civil — prazo prescricional geral decenal."],
+    estrategiaDefesa: [
+      "Atualizar todas as teses de prescrição de restituição de corretagem/SATI para o parâmetro decenal fixado — não mais alegar prazos mais curtos (trienal/quinquenal) como defesa principal.",
+      "Deslocar o eixo de defesa para o termo inicial da contagem (data da ciência do dano/atraso), buscando delimitar o marco inicial mais favorável à incorporadora.",
+    ],
+    estrategiaAcordo: [
+      "Reavaliar acordos já firmados com base em prazos mais curtos — o parâmetro decenal amplia a janela de risco e pode exigir revisão de política de acordos para casos antigos ainda dentro do novo prazo.",
+    ],
+    avaliacaoBase: [
+      "Ampliar o horizonte de provisionamento de restituição de corretagem/SATI para 10 anos contados da ciência do atraso, revisando estimativas de contingência que usavam prazos mais curtos.",
+    ],
+  },
+  {
+    id: "corretagem-06",
+    tema: "corretagem",
+    titulo: "Corretora não responde por atraso na entrega do imóvel",
+    data: "23/10/2025",
+    resumo:
+      "Em regra, a corretora não tem responsabilidade solidária com a construtora por atraso na entrega do imóvel, reforçando o entendimento consolidado no Tema 1173.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/23102025-Em-regra--corretora-nao-tem-responsabilidade-solidaria-com-construtora-por-atraso-na-entrega-de-imovel.aspx",
+    teseFixada:
+      "A corretora, em regra, não responde solidariamente com a construtora/incorporadora por atraso na entrega do imóvel, na linha do Tema 1173.",
+    temaRepetitivo: "Tema 1173",
+    baseLegal: ["Art. 14 c/c art. 25, §1º, do CDC."],
+    estrategiaDefesa: [
+      "Reforçar, em contestações conjuntas com corretoras parceiras, a ausência de solidariedade da corretora por atraso de obra, citando este precedente e o Tema 1173.",
+    ],
+    estrategiaAcordo: [
+      "Excluir corretoras de qualquer rateio de indenização por atraso de obra em acordos coletivos ou individuais.",
+    ],
+    avaliacaoBase: [
+      "Confirmar concentração de 100% do risco financeiro por atraso de obra na incorporadora, sem expectativa de diluição com corretoras parceiras.",
     ],
   },
 
