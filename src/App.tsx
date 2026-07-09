@@ -6,29 +6,21 @@ import { repetitivos } from "./data/repetitivos";
 import { Header } from "./components/Header";
 import { RepetitivosSection } from "./components/RepetitivosSection";
 import { FilterBar } from "./components/FilterBar";
-import { CaseCard } from "./components/CaseCard";
+import { TemaSection } from "./components/TemaSection";
 
 const ATUALIZADO_EM = "09/07/2026";
+const TODOS_TEMAS = new Set<TemaId>(temas.map((t) => t.id));
 
 function App() {
-  const [temaSelecionado, setTemaSelecionado] = useState<TemaId | null>(null);
   const [temaRepetitivoSelecionado, setTemaRepetitivoSelecionado] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  const [temasAbertos, setTemasAbertos] = useState<Set<TemaId>>(TODOS_TEMAS);
 
-  const temaPorId = useMemo(() => Object.fromEntries(temas.map((t) => [t.id, t])), []);
-
-  const contagens = useMemo(() => {
-    const c = {} as Record<TemaId, number>;
-    for (const tema of temas) {
-      c[tema.id] = casos.filter((caso) => caso.tema === tema.id).length;
-    }
-    return c;
-  }, []);
+  const filtrando = query.trim() !== "" || temaRepetitivoSelecionado !== null;
 
   const casosFiltrados = useMemo(() => {
     const q = query.trim().toLowerCase();
     return casos.filter((caso) => {
-      if (temaSelecionado && caso.tema !== temaSelecionado) return false;
       if (temaRepetitivoSelecionado && caso.temaRepetitivo !== temaRepetitivoSelecionado) return false;
       if (!q) return true;
       const haystack = [
@@ -42,7 +34,16 @@ function App() {
         .toLowerCase();
       return haystack.includes(q);
     });
-  }, [temaSelecionado, temaRepetitivoSelecionado, query]);
+  }, [temaRepetitivoSelecionado, query]);
+
+  function toggleTema(id: TemaId) {
+    setTemasAbertos((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
 
   return (
     <div className="min-h-screen" style={{ background: "var(--page-bg)" }}>
@@ -54,32 +55,33 @@ function App() {
         onSelecionar={setTemaRepetitivoSelecionado}
       />
 
-      <FilterBar
-        temas={temas}
-        temaSelecionado={temaSelecionado}
-        onSelecionarTema={setTemaSelecionado}
-        query={query}
-        onQueryChange={setQuery}
-        contagens={contagens}
-        total={casos.length}
-      />
+      <div className="py-4">
+        <FilterBar
+          query={query}
+          onQueryChange={setQuery}
+          onExpandAll={() => setTemasAbertos(new Set(TODOS_TEMAS))}
+          onCollapseAll={() => setTemasAbertos(new Set())}
+        />
+      </div>
 
-      <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
-        {casosFiltrados.length === 0 ? (
-          <p className="py-12 text-center text-sm" style={{ color: "var(--ink-muted)" }}>
-            Nenhum caso encontrado para os filtros selecionados.
-          </p>
-        ) : (
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {casosFiltrados.map((caso) => (
-              <CaseCard key={caso.id} caso={caso} tema={temaPorId[caso.tema]} />
-            ))}
-          </div>
-        )}
+      <main className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-2 sm:px-6">
+        {temas.map((tema) => {
+          const casosDoTema = casosFiltrados.filter((c) => c.tema === tema.id);
+          if (filtrando && casosDoTema.length === 0) return null;
+          return (
+            <TemaSection
+              key={tema.id}
+              tema={tema}
+              casos={casosDoTema}
+              aberto={filtrando || temasAbertos.has(tema.id)}
+              onToggle={() => toggleTema(tema.id)}
+            />
+          );
+        })}
       </main>
 
       <footer
-        className="border-t px-4 py-6 text-center text-xs sm:px-6"
+        className="mt-4 border-t px-4 py-6 text-center text-xs sm:px-6"
         style={{ borderColor: "var(--border)", color: "var(--ink-muted)" }}
       >
         <p>

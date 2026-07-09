@@ -17,10 +17,10 @@ export function CaseCard({ caso, tema }: Props) {
     >
       <div className="flex flex-wrap items-center gap-2 text-xs">
         <span
-          className="flex items-center gap-1.5 rounded-full px-2 py-1 font-medium text-white"
-          style={{ background: `var(${tema.corVar})` }}
+          className="rounded-full px-2 py-1 font-medium"
+          style={{ background: `color-mix(in srgb, var(${tema.corVar}) 14%, transparent)`, color: `var(${tema.corVar})` }}
         >
-          {tema.labelCurto}
+          {caso.data}
         </span>
         {caso.temaRepetitivo && (
           <span
@@ -30,7 +30,6 @@ export function CaseCard({ caso, tema }: Props) {
             {caso.temaRepetitivo}
           </span>
         )}
-        <span style={{ color: "var(--ink-muted)" }}>{caso.data}</span>
       </div>
 
       <h3 className="mt-2 text-base font-semibold" style={{ color: "var(--ink-primary)" }}>
@@ -53,15 +52,16 @@ export function CaseCard({ caso, tema }: Props) {
         </p>
       )}
 
-      <div className="mt-3 flex items-center gap-3">
+      <div className="mt-3 flex flex-wrap items-center gap-2">
         <a
           href={caso.fonte}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm font-medium underline"
-          style={{ color: "var(--brand-orange-text)" }}
+          className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-semibold text-white"
+          style={{ background: "var(--brand-orange-btn)" }}
         >
-          Ver notícia oficial no STJ ↗
+          <span aria-hidden="true">📖</span>
+          <span>Ler íntegra no STJ ↗</span>
         </a>
         <button
           type="button"

@@ -8,6 +8,7 @@ export const temas: TemaInfo[] = [
     descricao:
       "Cláusula de tolerância, mora na entrega, cláusula penal e lucros cessantes.",
     corVar: "--tema-atraso-obra",
+    icone: "🏗️",
   },
   {
     id: "distrato",
@@ -16,6 +17,7 @@ export const temas: TemaInfo[] = [
     descricao:
       "Lei 13.786/2018, retenção de valores, taxa de fruição/ocupação e prazos de restituição.",
     corVar: "--tema-distrato",
+    icone: "📄",
   },
   {
     id: "vicios-construtivos",
@@ -24,6 +26,7 @@ export const temas: TemaInfo[] = [
     descricao:
       "Garantia quinquenal (art. 618 CC), prazos decadenciais e prescricionais, seguro habitacional.",
     corVar: "--tema-vicios-construtivos",
+    icone: "🧱",
   },
   {
     id: "loteamento",
@@ -32,6 +35,7 @@ export const temas: TemaInfo[] = [
     descricao:
       "Lei 6.766/1979, responsabilidade do loteador, registro e taxas de manutenção.",
     corVar: "--tema-loteamento",
+    icone: "🗺️",
   },
   {
     id: "corretagem",
@@ -40,6 +44,7 @@ export const temas: TemaInfo[] = [
     descricao:
       "Comissão de corretagem, SATI, legitimidade passiva da incorporadora e responsabilidade do corretor.",
     corVar: "--tema-corretagem",
+    icone: "🤝",
   },
   {
     id: "taxa-condominial",
@@ -48,5 +53,6 @@ export const temas: TemaInfo[] = [
     descricao:
       "Rateio de despesas condominiais em unidades não vendidas e responsabilidade do adquirente registrado.",
     corVar: "--tema-taxa-condominial",
+    icone: "🏢",
   },
 ];

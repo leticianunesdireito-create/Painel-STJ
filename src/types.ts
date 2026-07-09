@@ -12,6 +12,7 @@ export interface TemaInfo {
   labelCurto: string;
   descricao: string;
   corVar: string; // nome da CSS custom property, ex: "--tema-atraso-obra"
+  icone: string; // emoji representando o tema
 }
 
 export interface CasoSTJ {
