@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --page-bg: #eae5db;
+  --card-bg: #fcfcfb;
+  --ink-primary: #0b0b0b;
+  --ink-secondary: #52514e;
+  --ink-muted: #898781;
+  --border: rgba(11, 11, 11, 0.1);
+
+  --brand-green: #1f5c3c;
+  --brand-orange-decor: #f0932b;
+  --brand-orange-text: #a6560a;
+
+  --warning-bg: #fab219;
+  --warning-ink: #0b0b0b;
+
+  --tema-atraso-obra: #2a78d6;
+  --tema-distrato: #1baf7a;
+  --tema-vicios-construtivos: #eda100;
+  --tema-loteamento: #4a3aa7;
+  --tema-corretagem: #e34948;
+  --tema-taxa-condominial: #e87ba4;
+
+  color-scheme: light dark;
+}
+
+:root[data-theme="dark"] {
+  --page-bg: #17150f;
+  --card-bg: #211f18;
+  --ink-primary: #ffffff;
+  --ink-secondary: #c3c2b7;
+  --ink-muted: #898781;
+  --border: rgba(255, 255, 255, 0.1);
+
+  --brand-orange-text: #e8974f;
+
+  --tema-atraso-obra: #3987e5;
+  --tema-distrato: #199e70;
+  --tema-vicios-construtivos: #c98500;
+  --tema-loteamento: #9085e9;
+  --tema-corretagem: #e66767;
+  --tema-taxa-condominial: #d55181;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page-bg: #17150f;
+    --card-bg: #211f18;
+    --ink-primary: #ffffff;
+    --ink-secondary: #c3c2b7;
+    --ink-muted: #898781;
+    --border: rgba(255, 255, 255, 0.1);
+
+    --brand-orange-text: #e8974f;
+
+    --tema-atraso-obra: #3987e5;
+    --tema-distrato: #199e70;
+    --tema-vicios-construtivos: #c98500;
+    --tema-loteamento: #9085e9;
+    --tema-corretagem: #e66767;
+    --tema-taxa-condominial: #d55181;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--page-bg);
+  color: var(--ink-primary);
+}
+
+a {
+  color: var(--brand-orange-text);
+}
