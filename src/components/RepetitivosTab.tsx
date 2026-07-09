@@ -7,24 +7,27 @@ import { RepetitivoTemaSection } from "./RepetitivoTemaSection";
 interface Props {
   repetitivos: Repetitivo[];
   temas: TemaInfo[];
-  onVerNoticias: (numeroTema: string) => void;
 }
+
+type StatusFiltro = "todos" | "julgado" | "em julgamento";
 
 const TODOS_TEMAS = (temas: TemaInfo[]) => new Set<TemaId>(temas.map((t) => t.id));
 
-export function RepetitivosTab({ repetitivos, temas, onVerNoticias }: Props) {
+export function RepetitivosTab({ repetitivos, temas }: Props) {
   const [query, setQuery] = useState("");
+  const [status, setStatus] = useState<StatusFiltro>("todos");
   const [temasAbertos, setTemasAbertos] = useState<Set<TemaId>>(() => TODOS_TEMAS(temas));
 
-  const filtrando = query.trim() !== "";
+  const filtrando = query.trim() !== "" || status !== "todos";
 
   const filtrados = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return repetitivos;
-    return repetitivos.filter((r) =>
-      [r.numero, r.questao, r.status].join(" ").toLowerCase().includes(q),
-    );
-  }, [repetitivos, query]);
+    return repetitivos.filter((r) => {
+      if (status !== "todos" && r.status !== status) return false;
+      if (!q) return true;
+      return [r.numero, r.questao, r.status].join(" ").toLowerCase().includes(q);
+    });
+  }, [repetitivos, query, status]);
 
   const ordenados = useMemo(() => ordenarPorDataRecente(filtrados), [filtrados]);
 
@@ -50,12 +53,14 @@ export function RepetitivosTab({ repetitivos, temas, onVerNoticias }: Props) {
         onCollapseAll={() => setTemasAbertos(new Set())}
       />
 
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-        <p className="text-sm" style={{ color: "var(--ink-secondary)" }}>
-          Clique em "Ler íntegra no STJ" para conferir o julgado, ou use a busca acima. Para ver as
-          notícias e decisões relacionadas a um tema repetitivo específico, use o botão dentro de
-          cada card.
-        </p>
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-2 px-4 sm:px-6">
+        <StatusChip label="Todos" ativo={status === "todos"} onClick={() => setStatus("todos")} />
+        <StatusChip label="Julgado" ativo={status === "julgado"} onClick={() => setStatus("julgado")} />
+        <StatusChip
+          label="Em julgamento"
+          ativo={status === "em julgamento"}
+          onClick={() => setStatus("em julgamento")}
+        />
       </div>
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 sm:px-6">
@@ -69,11 +74,27 @@ export function RepetitivosTab({ repetitivos, temas, onVerNoticias }: Props) {
               repetitivos={repetitivosDoTema}
               aberto={filtrando || temasAbertos.has(tema.id)}
               onToggle={() => toggleTema(tema.id)}
-              onVerNoticias={onVerNoticias}
             />
           );
         })}
       </div>
     </div>
+  );
+}
+
+function StatusChip({ label, ativo, onClick }: { label: string; ativo: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="rounded-full border px-3 py-1.5 text-sm font-medium"
+      style={{
+        borderColor: ativo ? "var(--brand-green)" : "var(--border)",
+        background: ativo ? "var(--brand-green)" : "var(--card-bg)",
+        color: ativo ? "#fff" : "var(--ink-primary)",
+      }}
+    >
+      {label}
+    </button>
   );
 }

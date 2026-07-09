@@ -29,13 +29,22 @@ export const temas: TemaInfo[] = [
     icone: "🧱",
   },
   {
-    id: "loteamento",
-    label: "Loteamento e incorporação (regularidade)",
-    labelCurto: "Loteamento",
+    id: "alienacao-fiduciaria",
+    label: "Alienação fiduciária",
+    labelCurto: "Alienação fiduciária",
     descricao:
-      "Lei 6.766/1979, responsabilidade do loteador, registro e taxas de manutenção.",
-    corVar: "--tema-loteamento",
-    icone: "🗺️",
+      "Lei 9.514/1997, consolidação da propriedade, leilão extrajudicial, taxa de ocupação e direito de preferência.",
+    corVar: "--tema-alienacao-fiduciaria",
+    icone: "🔑",
+  },
+  {
+    id: "registro-imobiliario",
+    label: "Registro imobiliário",
+    labelCurto: "Registro imobiliário",
+    descricao:
+      "Matrícula, averbação de construção, princípio da concentração e registro de incorporação.",
+    corVar: "--tema-registro-imobiliario",
+    icone: "📑",
   },
   {
     id: "corretagem",

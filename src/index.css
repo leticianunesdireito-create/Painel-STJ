@@ -19,7 +19,8 @@
   --tema-atraso-obra: #2a78d6;
   --tema-distrato: #1baf7a;
   --tema-vicios-construtivos: #eda100;
-  --tema-loteamento: #4a3aa7;
+  --tema-alienacao-fiduciaria: #4a3aa7;
+  --tema-registro-imobiliario: #008300;
   --tema-corretagem: #e34948;
   --tema-taxa-condominial: #e87ba4;
 
@@ -39,7 +40,8 @@
   --tema-atraso-obra: #3987e5;
   --tema-distrato: #199e70;
   --tema-vicios-construtivos: #c98500;
-  --tema-loteamento: #9085e9;
+  --tema-alienacao-fiduciaria: #9085e9;
+  --tema-registro-imobiliario: #008300;
   --tema-corretagem: #e66767;
   --tema-taxa-condominial: #d55181;
 }
@@ -58,7 +60,8 @@
     --tema-atraso-obra: #3987e5;
     --tema-distrato: #199e70;
     --tema-vicios-construtivos: #c98500;
-    --tema-loteamento: #9085e9;
+    --tema-alienacao-fiduciaria: #9085e9;
+    --tema-registro-imobiliario: #008300;
     --tema-corretagem: #e66767;
     --tema-taxa-condominial: #d55181;
   }

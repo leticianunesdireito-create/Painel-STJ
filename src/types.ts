@@ -2,7 +2,8 @@ export type TemaId =
   | "atraso-obra"
   | "distrato"
   | "vicios-construtivos"
-  | "loteamento"
+  | "alienacao-fiduciaria"
+  | "registro-imobiliario"
   | "corretagem"
   | "taxa-condominial";
 
@@ -24,7 +25,6 @@ export interface CasoSTJ {
   referencia?: string;
   fonte: string;
   teseFixada?: string;
-  temaRepetitivo?: string;
   baseLegal: string[];
   estrategiaDefesa: string[];
   estrategiaAcordo: string[];

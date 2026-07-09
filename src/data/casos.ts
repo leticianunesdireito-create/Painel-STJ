@@ -18,7 +18,6 @@ export const casos: CasoSTJ[] = [
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2019/Segunda-Secao-fixa-teses-sobre-penalidades-por-atraso-na-entrega-de-imovel.aspx",
     teseFixada:
       "Havendo cláusula penal compensatória no contrato de adesão apenas para o inadimplemento do adquirente, aplica-se por simetria em favor do comprador na mora da incorporadora; o Judiciário pode arbitrar indenização suplementar quando o valor pactuado for insuficiente.",
-    temaRepetitivo: "Tema 971",
     baseLegal: [
       "Art. 43-A da Lei 4.591/1964 (incluído pela Lei 13.786/2018) — tolerância de 180 dias corridos além da data contratual, sem gerar resolução ou penalidade, desde que pactuada de forma clara e destacada.",
     ],
@@ -99,7 +98,6 @@ export const casos: CasoSTJ[] = [
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2019/Segunda-Secao-fixa-teses-sobre-atraso-na-entrega-de-imoveis-do-programa-Minha-Casa--Minha-Vida.aspx",
     teseFixada:
       "Ultrapassado o prazo para conclusão do empreendimento no PMCMV, não podem ser cobrados encargos/juros de obra incidentes sobre o período de atraso imputável à vendedora; teses limitadas a imóveis residenciais das faixas 1,5, 2 e 3.",
-    temaRepetitivo: "Tema 996",
     baseLegal: [
       "Art. 43-A da Lei 4.591/1964 — delimitação do período de atraso indenizável (desconto da tolerância de 180 dias).",
     ],
@@ -274,7 +272,6 @@ export const casos: CasoSTJ[] = [
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/17112023-Segunda-Secao-inicia-analise-de-prescricao-da-indenizacao-por-vicios-de-construcao-em-imoveis-financiados-pelo-SFH.aspx",
     teseFixada:
       "Em julgamento (Tema 1.039) — divergência entre contagem a partir do fim do contrato de financiamento (Min. Isabel Gallotti) e a partir da negativa expressa da seguradora (Min. Nancy Andrighi).",
-    temaRepetitivo: "Tema 1039",
     baseLegal: [
       "Art. 205 do Código Civil — prazo prescricional decenal, cujo termo inicial está em discussão no repetitivo.",
     ],
@@ -298,7 +295,6 @@ export const casos: CasoSTJ[] = [
       "Continuidade do julgamento do Tema 1.039: a Corte Especial debate se o prazo prescricional da ação securitária por vício construtivo em imóvel do SFH conta do fim do contrato de financiamento ou da negativa da seguradora.",
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/22082024-Corte-discute-inicio-do-prazo-para-cobrar-seguro-por-defeito-de-construcao-em-imovel-do-SFH.aspx",
     teseFixada: "Em julgamento (Tema 1.039) — pedido de vista pendente de conclusão.",
-    temaRepetitivo: "Tema 1039",
     baseLegal: ["Art. 205 do Código Civil."],
     estrategiaDefesa: [
       "Mesma linha do caso vicios-03: acompanhar o repetitivo e requerer sobrestamento de processos individuais correlatos.",
@@ -311,34 +307,167 @@ export const casos: CasoSTJ[] = [
     ],
   },
 
-  // ---------- Loteamento e incorporação (regularidade) ----------
+  // ---------- Alienação fiduciária ----------
   {
-    id: "loteamento-01",
-    tema: "loteamento",
-    titulo: "Municípios são responsáveis pela regularização de lotes em espaços urbanos",
-    data: "21/07/2016",
+    id: "alienacao-01",
+    tema: "alienacao-fiduciaria",
+    titulo: "STJ define alcance de lei sobre alienação fiduciária de imóveis",
+    data: "19/02/2026",
     resumo:
-      "O STJ definiu que a regularização de loteamentos irregulares é poder-dever do Município, atividade vinculada e não discricionária, podendo o Município cobrar do loteador os custos da atuação saneadora.",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2016/2016-07-21_16-30_Municipios-sao-responsaveis-pela-regularizacao-de-lotes-em-espacos-urbanos.aspx",
+      "Julgamento do Tema 1288: a Segunda Seção fixou duas teses distinguindo os efeitos da consolidação da propriedade fiduciária antes e depois da Lei 13.465/2017 — desfazimento da consolidação com mora purgada (regra antiga) x direito de preferência apenas (regra nova).",
+    referencia: "Segunda Seção",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19022026-Repetitivo-define-efeitos-da-quitacao-da-divida-em-imovel-com-alienacao-fiduciaria-apos-a-Lei-13-4652017.aspx",
     teseFixada:
-      "O poder-dever municipal de regularização não exime o loteador de responder pelos custos da atuação saneadora, limitados às obras de infraestrutura essenciais.",
+      "Antes da Lei 13.465/2017: consolidada a propriedade e purgada a mora, impõe-se o desfazimento da consolidação com retomada do financiamento. A partir da Lei 13.465/2017: consolidada a propriedade e não purgada a mora, assegura-se ao devedor fiduciante apenas o direito de preferência do art. 27, §2º-B, da Lei 9.514/1997.",
     baseLegal: [
-      "Lei 6.766/1979 (Lei do Parcelamento do Solo Urbano) — obrigações do loteador quanto à infraestrutura.",
+      "Art. 26 da Lei 9.514/1997 — consolidação da propriedade em nome do credor fiduciário após não purgação da mora.",
+      "Art. 27, §2º-B, da Lei 9.514/1997 (incluído pela Lei 13.465/2017) — direito de preferência do devedor fiduciante.",
     ],
     estrategiaDefesa: [
-      "Limitar eventual ressarcimento ao Município às obras de infraestrutura essenciais efetivamente pendentes, impugnando itens que extrapolem esse rol.",
-      "Comprovar cumprimento das obrigações urbanísticas assumidas no projeto de loteamento aprovado.",
+      "Identificar a data do contrato/consolidação para aplicar corretamente o regime (antes ou depois de 27/12/2017 — vigência da Lei 13.465/2017), evitando desfazimento indevido de consolidação já regida pela regra nova.",
+      "Em contratos pós-2017, assegurar apenas o exercício do direito de preferência ao devedor, sem obrigação de desfazer a consolidação.",
     ],
     estrategiaAcordo: [
-      "Negociar cronograma de execução direta das pendências de infraestrutura em vez de ressarcimento financeiro ao Município, reduzindo exposição em dinheiro.",
+      "Negociar exercício do direito de preferência dentro do prazo legal como alternativa ao litígio sobre desfazimento da consolidação.",
     ],
     avaliacaoBase: [
-      "Provisionar apenas o custo de obras de infraestrutura essenciais pendentes (vias, drenagem, saneamento básico), com base em orçamento técnico, não em estimativa municipal genérica.",
+      "Segregar a carteira de créditos com garantia fiduciária por data de consolidação (pré/pós Lei 13.465/2017) para aplicar o regime de risco correto a cada grupo.",
     ],
   },
   {
-    id: "loteamento-02",
-    tema: "loteamento",
+    id: "alienacao-02",
+    tema: "alienacao-fiduciaria",
+    titulo: "Intimação do devedor fiduciante sobre leilão extrajudicial",
+    data: "14/11/2023",
+    resumo:
+      "A Quarta Turma decidiu que a intimação do devedor fiduciante sobre a data do leilão extrajudicial só se tornou obrigatória após a Lei 13.465/2017.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/14112023-Intimacao-do-devedor-fiduciante-sobre-data-do-leilao-so-se-tornou-obrigatoria-apos-2017--decide-Quarta-Turma.aspx",
+    teseFixada:
+      "Para leilões realizados sob contratos anteriores à Lei 13.465/2017, não é exigível a intimação específica do devedor fiduciante sobre a data do leilão.",
+    baseLegal: ["Art. 27 da Lei 9.514/1997, alterado pela Lei 13.465/2017."],
+    estrategiaDefesa: [
+      "Verificar a data de celebração do contrato antes de arguir nulidade de leilão por ausência de intimação específica — o dever só existe para contratos pós-2017.",
+      "Documentar o cumprimento integral do rito de intimação (edital, publicação) exigido pela lei vigente à época do contrato.",
+    ],
+    estrategiaAcordo: [
+      "Evitar reconhecer nulidade de leilões antigos por ausência de intimação específica quando o contrato for anterior à Lei 13.465/2017.",
+    ],
+    avaliacaoBase: [
+      "Baixo risco de anulação de leilões conduzidos sob contratos pré-2017 por esse fundamento específico.",
+    ],
+  },
+  {
+    id: "alienacao-03",
+    tema: "alienacao-fiduciaria",
+    titulo: "Descrição do imóvel no leilão independe do contrato fiduciário",
+    data: "24/10/2025",
+    resumo:
+      "A descrição do imóvel constante do edital de leilão não precisa ser idêntica à que consta no contrato de propriedade fiduciária, bastando que identifique o bem sem gerar dúvida ou prejuízo aos interessados.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/24102025-Descricao-do-imovel-no-edital-do-leilao-nao-depende-da-que-consta-no-contrato-de-propriedade-fiduciaria.aspx",
+    teseFixada:
+      "Pequenas divergências na descrição do imóvel entre o edital e o contrato fiduciário não geram nulidade do leilão quando não há dúvida sobre a identidade do bem nem prejuízo aos participantes.",
+    baseLegal: ["Art. 27 da Lei 9.514/1997."],
+    estrategiaDefesa: [
+      "Ao editalizar o leilão, focar na identificação inequívoca do imóvel (matrícula, endereço) mais do que na réplica exata do texto contratual, citando este precedente se questionado.",
+    ],
+    estrategiaAcordo: [
+      "Não há necessidade de refazer leilões por divergências textuais pontuais na descrição do bem, reduzindo custo de eventuais impugnações.",
+    ],
+    avaliacaoBase: [
+      "Risco baixo de anulação de leilão por divergência formal na descrição do imóvel, desde que a identificação registral esteja correta.",
+    ],
+  },
+  {
+    id: "alienacao-04",
+    tema: "alienacao-fiduciaria",
+    titulo: "STJ: falta de registro do contrato de alienação fiduciária",
+    data: "20/01/2025",
+    resumo:
+      "Vendedora de imóvel perde o direito à execução extrajudicial por não ter registrado o contrato com alienação fiduciária no cartório de registro de imóveis.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/20012025-Vendedora-de-imovel-perde-direito-a-execucao-extrajudicial-por-nao-ter-registrado-contrato-com-alienacao.aspx",
+    teseFixada:
+      "O procedimento de execução extrajudicial (leilão) da Lei 9.514/1997 pressupõe o registro do contrato de alienação fiduciária na matrícula do imóvel; sem esse registro, resta apenas a via judicial comum.",
+    baseLegal: ["Art. 23 da Lei 9.514/1997 — constituição da propriedade fiduciária mediante registro."],
+    estrategiaDefesa: [
+      "Garantir, em toda operação com garantia de alienação fiduciária de imóvel, o registro do contrato na matrícula imediatamente após a assinatura, como pré-requisito para manter a via extrajudicial de execução.",
+      "Auditar periodicamente a carteira de contratos com garantia fiduciária para identificar registros pendentes.",
+    ],
+    estrategiaAcordo: [
+      "Nos casos sem registro, avaliar rapidamente a migração para execução/resolução judicial em vez de insistir na via extrajudicial, evitando nulidade processual futura.",
+    ],
+    avaliacaoBase: [
+      "Tratar contratos sem registro de alienação fiduciária como exposição a custo/prazo judicial (não extrajudicial) na avaliação de recuperação de crédito.",
+    ],
+  },
+  {
+    id: "alienacao-05",
+    tema: "alienacao-fiduciaria",
+    titulo: "Execução de dívida garantida por alienação fiduciária",
+    data: "10/03/2022",
+    resumo:
+      "O credor de dívida garantida por alienação fiduciária de imóvel pode optar por execução judicial ou pelo procedimento extrajudicial da Lei 9.514/1997, não estando obrigado a esgotar um antes do outro.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/10032022-Credor-de-divida-garantida-por-alienacao-fiduciaria-de-imovel-pode-optar-por-execucao-judicial-ou-extrajudicial.aspx",
+    teseFixada:
+      "A existência de garantia fiduciária não retira do credor a faculdade de buscar a via judicial comum, sendo a execução extrajudicial uma alternativa, não uma via exclusiva e obrigatória.",
+    baseLegal: ["Lei 9.514/1997 — procedimento extrajudicial facultativo."],
+    estrategiaDefesa: [
+      "Avaliar caso a caso qual via (judicial ou extrajudicial) minimiza tempo e custo de recuperação do imóvel, sem receio de preclusão por optar por uma ou outra.",
+    ],
+    estrategiaAcordo: [
+      "Usar a possibilidade de dupla via como moeda de negociação para acelerar acordo com o devedor inadimplente.",
+    ],
+    avaliacaoBase: [
+      "Nenhuma mudança de provisão — apenas amplia opções estratégicas de recuperação de crédito, sem gerar exposição financeira nova.",
+    ],
+  },
+  {
+    id: "alienacao-06",
+    tema: "alienacao-fiduciaria",
+    titulo: "Reintegração de posse não exige prévia realização de leilão",
+    data: "05/07/2024",
+    resumo:
+      "Ação de reintegração de posse de imóvel com alienação fiduciária não exige a prévia realização dos leilões previstos na Lei 9.514/1997 — a consolidação da propriedade já autoriza a retomada da posse.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/05072024-Acao-de-reintegracao-de-posse-de-imovel-com-alienacao-fiduciaria-nao-exige-previa-realizacao-de-leiloes.aspx",
+    teseFixada:
+      "Consolidada a propriedade fiduciária em nome do credor, a reintegração de posse pode ser buscada independentemente da realização prévia dos leilões, que dizem respeito à venda do bem, não à retomada da posse.",
+    baseLegal: ["Art. 30 da Lei 9.514/1997 — direito à reintegração de posse após consolidação."],
+    estrategiaDefesa: [
+      "Ajuizar reintegração de posse imediatamente após a consolidação da propriedade, sem aguardar a realização dos leilões, agilizando a retomada do imóvel inadimplido.",
+    ],
+    estrategiaAcordo: [
+      "Usar a celeridade da reintegração de posse como incentivo para o devedor purgar a mora ou desocupar amigavelmente antes do ajuizamento.",
+    ],
+    avaliacaoBase: [
+      "Reduzir o prazo médio estimado de retomada de imóveis inadimplidos com garantia fiduciária, acelerando o ciclo de recuperação de ativos.",
+    ],
+  },
+
+  // ---------- Registro imobiliário ----------
+  {
+    id: "registro-01",
+    tema: "registro-imobiliario",
+    titulo: "Registros em cartório durante incorporação imobiliária devem ser cobrados como ato único",
+    data: "25/06/2015",
+    resumo:
+      "Os registros e averbações relativos à incorporadora ou ao empreendimento, realizados na matrícula-mãe e nas matrículas das unidades autônomas dele decorrentes, devem ser cobrados como ato único de registro, nos termos do art. 237-A da Lei 6.015/1973.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2015/2015-06-25_09-48_Registros-em-cartorio-durante-incorporacao-imobiliaria-devem-ser-cobrados-como-ato-unico.aspx",
+    teseFixada:
+      "Atos de registro/averbação relacionados a um mesmo empreendimento imobiliário, ainda que refletidos em múltiplas matrículas, compõem um único ato registral para fins de cobrança de emolumentos (princípio da concentração).",
+    baseLegal: ["Art. 237-A da Lei 6.015/1973 (Lei de Registros Públicos)."],
+    estrategiaDefesa: [
+      "Contestar cobranças de emolumentos cartorários que tratem cada matrícula de unidade autônoma como registro autônomo, quando o ato tiver origem em um único fato registral do empreendimento.",
+      "Manter documentação centralizada dos atos de registro do empreendimento para demonstrar a natureza única do ato perante eventual cobrança excessiva.",
+    ],
+    estrategiaAcordo: [
+      "Negociar diretamente com o cartório o enquadramento como ato único antes de judicializar divergências de cobrança de emolumentos.",
+    ],
+    avaliacaoBase: [
+      "Auditar periodicamente as cobranças de emolumentos cartorários de grandes empreendimentos para identificar cobranças em duplicidade por matrícula.",
+    ],
+  },
+  {
+    id: "registro-02",
+    tema: "registro-imobiliario",
     titulo: "Sem prejuízo ao desenvolvimento urbano, loteador pode pedir cancelamento do procedimento de registro",
     data: "23/09/2020",
     resumo:
@@ -360,47 +489,47 @@ export const casos: CasoSTJ[] = [
     ],
   },
   {
-    id: "loteamento-03",
-    tema: "loteamento",
-    titulo: "Comprador de lote não precisa pagar taxa anterior à compra",
-    data: "24/08/2021",
+    id: "registro-03",
+    tema: "registro-imobiliario",
+    titulo: "Convalidação do registro de imóvel prenotado em favor de outro",
+    data: "27/11/2024",
     resumo:
-      "A taxa de manutenção devida pelo antigo dono do lote não pode ser exigida do novo comprador do imóvel em loteamento — a obrigação é pessoal do proprietário à época do fato gerador, salvo disposição em contrário assumida expressamente.",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/24082021-Taxa-de-manutencao-devida-pelo-antigo-dono-nao-pode-ser-exigida-do-comprador-de-imovel-em-loteamento.aspx",
+      "É possível convalidar o registro de imóvel feito enquanto pendente prenotação de terceiro que perdeu seus efeitos pelo decurso do tempo, preservando a validade do ato praticado pelo interessado diligente.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/27112024-E-possivel-convalidar-registro-de-imovel-feito-enquanto-pendente-prenotacao-que-perdeu-efeitos-pelo-tempo.aspx",
     teseFixada:
-      "A obrigação de pagar taxa de manutenção de loteamento tem natureza pessoal (não propter rem quando não há disposição contratual/registral expressa), não se transmitindo automaticamente ao adquirente do lote.",
-    baseLegal: ["Lei 6.766/1979 — regime de obrigações do loteamento."],
+      "Perdida a eficácia da prenotação anterior pelo decurso do prazo legal, o registro praticado em favor de outro título pode ser convalidado, não sendo cabível sua anulação automática.",
+    baseLegal: ["Lei 6.015/1973 — regime de prenotação e prioridade registral."],
     estrategiaDefesa: [
-      "Ao cobrar taxa de manutenção/conservação de loteamento, cobrar do proprietário à época do fato gerador, e não automaticamente do adquirente atual, salvo cláusula expressa de sub-rogação no contrato de compra e venda.",
-      "Revisar contratos-padrão de venda de lotes para incluir cláusula clara de responsabilidade do adquirente por taxas futuras, mitigando esse risco em vendas futuras.",
+      "Ao adquirir/registrar unidades, monitorar o prazo de vigência de prenotações concorrentes na matrícula para assegurar a prioridade do registro da MRV ou de seus adquirentes.",
+      "Invocar este precedente quando questionada a validade de um registro praticado após a perda de eficácia de prenotação anterior de terceiro.",
     ],
     estrategiaAcordo: [
-      "Em cobranças de taxa contra novos adquirentes, aceitar redirecionar a cobrança ao antigo proprietário quando comprovado o fato gerador anterior à transferência.",
+      "Evitar acordos que reconheçam nulidade de registros válidos apenas por existência de prenotação concorrente já caduca.",
     ],
     avaliacaoBase: [
-      "Ajustar contratos futuros para incluir cláusula de sub-rogação expressa do dever de pagar taxas de manutenção, reduzindo risco de inadimplência não recuperável em revendas.",
+      "Baixo risco de perda de titularidade registral por prenotações concorrentes vencidas, desde que o registro tenha sido praticado corretamente após a caducidade.",
     ],
   },
   {
-    id: "loteamento-04",
-    tema: "loteamento",
-    titulo: "Construtora deve pagar taxa de manutenção de loteamento",
-    data: "24/10/2022",
+    id: "registro-04",
+    tema: "registro-imobiliario",
+    titulo: "Imóvel sem matrícula própria não pode ser reivindicado por adjudicação compulsória",
+    data: "26/09/2014",
     resumo:
-      "Construtora que mantém lotes não vendidos em loteamento fechado deve pagar a taxa de manutenção à empresa administradora, na mesma proporção que os demais proprietários, sob pena de enriquecimento sem causa.",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2022/24102022-Construtora-deve-pagar-taxa-de-manutencao-a-empresa-de-administracao-de-loteamento.aspx",
+      "Não é possível a adjudicação compulsória de imóvel que não possui matrícula própria individualizada, sendo necessário primeiro regularizar o desmembramento/individualização registral do bem.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2014/2014-09-26_09-26_Imovel-sem-matricula-propria-nao-pode-ser-reivindicado-por-adjudicacao-compulsoria.aspx",
     teseFixada:
-      "A titularidade de lotes não comercializados por incorporadora/construtora não a exime do pagamento proporcional da taxa de manutenção do loteamento, sob pena de oneração indevida dos demais proprietários.",
-    baseLegal: ["Art. 1.334 do Código Civil, por analogia (rateio proporcional entre proprietários)."],
+      "O princípio da especialidade objetiva do registro imobiliário exige que a unidade a ser adjudicada tenha matrícula própria individualizada; sem ela, a adjudicação compulsória não pode ser deferida.",
+    baseLegal: ["Lei 6.015/1973 — princípio da especialidade/individualização registral."],
     estrategiaDefesa: [
-      "Evitar convenções/regulamentos internos que fixem taxa reduzida para lotes ainda de titularidade da incorporadora — esse tipo de cláusula tende a ser anulado (mesma lógica aplicada a taxa condominial, ver casos de taxa-condominial).",
-      "Orçar a taxa de manutenção de lotes em estoque como custo operacional recorrente do land bank, não como contingência incerta.",
+      "Em ações de adjudicação compulsória movidas por compradores de unidades ainda não individualizadas registralmente, arguir a ausência de matrícula própria como condição impeditiva, priorizando a regularização registral do empreendimento.",
+      "Priorizar a abertura de matrículas individualizadas das unidades assim que possível após o habite-se, reduzindo o risco de ações prematuras.",
     ],
     estrategiaAcordo: [
-      "Negociar diretamente com a administradora um cronograma de pagamento das taxas de lotes em estoque, evitando judicialização e possíveis encargos moratórios.",
+      "Comprometer-se com prazo de regularização registral das unidades como contrapartida em acordos com compradores que buscam adjudicação compulsória prematura.",
     ],
     avaliacaoBase: [
-      "Provisionar taxa de manutenção integral (mesmo valor per lote dos demais proprietários) para todo lote em estoque em loteamento fechado/condomínio de lotes.",
+      "Monitorar o prazo médio entre habite-se e abertura de matrículas individualizadas como indicador de risco de ações de adjudicação compulsória prematuras.",
     ],
   },
 
@@ -460,7 +589,6 @@ export const casos: CasoSTJ[] = [
     fonte: "https://scon.stj.jus.br/jurisprudencia/externo/informativo/?aplicacao=informativo&acao=pesquisar&livre=%40CNOT%3D%27017163%27",
     teseFixada:
       "A pretensão de restituição de comissão de corretagem e SATI vinculada à resolução do contrato por inadimplemento da incorporadora não se submete à prescrição trienal do art. 206, §3º, CC. Entendimento posteriormente refinado pelo STJ em 2025 (ver caso corretagem-05): prazo prescricional decenal.",
-    temaRepetitivo: "Tema 938",
     baseLegal: ["Art. 206, §3º, do Código Civil — afastado neste contexto específico."],
     estrategiaDefesa: [
       "Não invocar isoladamente a prescrição trienal (art. 206, §3º, CC) para pedidos de restituição de corretagem/SATI vinculados a resolução contratual — a tese foi afastada pelo STJ neste tema.",
@@ -484,7 +612,6 @@ export const casos: CasoSTJ[] = [
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26012026-Em-regra--corretor-de-imoveis-nao-responde-por-descumprimento-de-obrigacoes-da-construtora.aspx",
     teseFixada:
       "O corretor de imóveis, em regra, não responde por danos decorrentes do descumprimento de obrigações da construtora/incorporadora (atraso, vícios), salvo se tiver assumido expressamente obrigação própria ou agido com culpa na intermediação.",
-    temaRepetitivo: "Tema 1173",
     baseLegal: ["Art. 14 c/c art. 25, §1º, do CDC — responsabilidade solidária limitada aos integrantes da cadeia efetivamente responsáveis pelo defeito."],
     estrategiaDefesa: [
       "Usar o Tema 1173 para excluir corretores/imobiliárias parceiras de ações de indenização por atraso ou vício construtivo, direcionando a responsabilidade exclusivamente à incorporadora.",
@@ -508,7 +635,6 @@ export const casos: CasoSTJ[] = [
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/26082025-Prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos--define-Segunda-Secao.aspx",
     teseFixada:
       "O prazo prescricional para a pretensão de restituição de comissão de corretagem vinculada a atraso na entrega do imóvel é o decenal (art. 205 do CC), fixando parâmetro uniforme para o Tema 938.",
-    temaRepetitivo: "Tema 938",
     baseLegal: ["Art. 205 do Código Civil — prazo prescricional geral decenal."],
     estrategiaDefesa: [
       "Atualizar todas as teses de prescrição de restituição de corretagem/SATI para o parâmetro decenal fixado — não mais alegar prazos mais curtos (trienal/quinquenal) como defesa principal.",
@@ -531,7 +657,6 @@ export const casos: CasoSTJ[] = [
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/23102025-Em-regra--corretora-nao-tem-responsabilidade-solidaria-com-construtora-por-atraso-na-entrega-de-imovel.aspx",
     teseFixada:
       "A corretora, em regra, não responde solidariamente com a construtora/incorporadora por atraso na entrega do imóvel, na linha do Tema 1173.",
-    temaRepetitivo: "Tema 1173",
     baseLegal: ["Art. 14 c/c art. 25, §1º, do CDC."],
     estrategiaDefesa: [
       "Reforçar, em contestações conjuntas com corretoras parceiras, a ausência de solidariedade da corretora por atraso de obra, citando este precedente e o Tema 1173.",

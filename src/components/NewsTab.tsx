@@ -7,13 +7,11 @@ import { TemaSection } from "./TemaSection";
 interface Props {
   casos: CasoSTJ[];
   temas: TemaInfo[];
-  temaRepetitivoFiltro: string | null;
-  onLimparTemaRepetitivoFiltro: () => void;
 }
 
 const TODOS_TEMAS = (temas: TemaInfo[]) => new Set<TemaId>(temas.map((t) => t.id));
 
-export function NewsTab({ casos, temas, temaRepetitivoFiltro, onLimparTemaRepetitivoFiltro }: Props) {
+export function NewsTab({ casos, temas }: Props) {
   const [query, setQuery] = useState("");
   const [ano, setAno] = useState<number | null>(null);
   const [mes, setMes] = useState<number | null>(null);
@@ -21,12 +19,11 @@ export function NewsTab({ casos, temas, temaRepetitivoFiltro, onLimparTemaRepeti
 
   const anos = useMemo(() => anosDisponiveis(casos), [casos]);
 
-  const filtrando = query.trim() !== "" || ano !== null || mes !== null || temaRepetitivoFiltro !== null;
+  const filtrando = query.trim() !== "" || ano !== null || mes !== null;
 
   const casosFiltrados = useMemo(() => {
     const q = query.trim().toLowerCase();
     return casos.filter((caso) => {
-      if (temaRepetitivoFiltro && caso.temaRepetitivo !== temaRepetitivoFiltro) return false;
       if (ano !== null || mes !== null) {
         const d = parseDataBR(caso.data);
         if (!d) return false;
@@ -39,7 +36,7 @@ export function NewsTab({ casos, temas, temaRepetitivoFiltro, onLimparTemaRepeti
         .toLowerCase();
       return haystack.includes(q);
     });
-  }, [casos, temaRepetitivoFiltro, ano, mes, query]);
+  }, [casos, ano, mes, query]);
 
   const casosOrdenados = useMemo(() => ordenarPorDataRecente(casosFiltrados), [casosFiltrados]);
 
@@ -65,25 +62,6 @@ export function NewsTab({ casos, temas, temaRepetitivoFiltro, onLimparTemaRepeti
         onExpandAll={() => setTemasAbertos(TODOS_TEMAS(temas))}
         onCollapseAll={() => setTemasAbertos(new Set())}
       />
-
-      {temaRepetitivoFiltro && (
-        <div className="mx-auto flex w-full max-w-6xl items-center gap-2 px-4 sm:px-6">
-          <span
-            className="flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm font-medium"
-            style={{ borderColor: "var(--brand-green)", color: "var(--brand-green)" }}
-          >
-            Filtrando por {temaRepetitivoFiltro}
-            <button
-              type="button"
-              onClick={onLimparTemaRepetitivoFiltro}
-              aria-label="Remover filtro de tema repetitivo"
-              className="font-bold"
-            >
-              ×
-            </button>
-          </span>
-        </div>
-      )}
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 sm:px-6">
         {temas.map((tema) => {

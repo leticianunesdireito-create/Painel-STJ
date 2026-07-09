@@ -13,12 +13,6 @@ type Aba = "noticias" | "repetitivos";
 
 function App() {
   const [aba, setAba] = useState<Aba>("noticias");
-  const [temaRepetitivoFiltro, setTemaRepetitivoFiltro] = useState<string | null>(null);
-
-  function irParaNoticiasDoRepetitivo(numeroTema: string) {
-    setTemaRepetitivoFiltro(numeroTema);
-    setAba("noticias");
-  }
 
   return (
     <div className="min-h-screen" style={{ background: "var(--page-bg)" }}>
@@ -33,18 +27,9 @@ function App() {
 
       <main className="py-4">
         {aba === "noticias" ? (
-          <NewsTab
-            casos={casos}
-            temas={temas}
-            temaRepetitivoFiltro={temaRepetitivoFiltro}
-            onLimparTemaRepetitivoFiltro={() => setTemaRepetitivoFiltro(null)}
-          />
+          <NewsTab casos={casos} temas={temas} />
         ) : (
-          <RepetitivosTab
-            repetitivos={repetitivos}
-            temas={temas}
-            onVerNoticias={irParaNoticiasDoRepetitivo}
-          />
+          <RepetitivosTab repetitivos={repetitivos} temas={temas} />
         )}
       </main>
 

@@ -52,12 +52,12 @@ export const repetitivos: Repetitivo[] = [
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26012026-Em-regra--corretor-de-imoveis-nao-responde-por-descumprimento-de-obrigacoes-da-construtora.aspx",
   },
   {
-    numero: "Tema 882",
-    temaAssunto: "loteamento",
+    numero: "Tema 1288",
+    temaAssunto: "alienacao-fiduciaria",
     questao:
-      "Taxas de manutenção instituídas por associação de moradores em loteamento fechado não vinculam os não associados que não aderiram voluntariamente ao encargo.",
+      "Efeitos da consolidação da propriedade fiduciária de imóvel antes e depois da Lei 13.465/2017: desfazimento da consolidação com mora purgada (regra antiga) x direito de preferência (regra nova).",
     status: "julgado",
-    data: "09/08/2022",
-    fonte: "https://scon.stj.jus.br/jurisprudencia/externo/informativo/?aplicacao=informativo&acao=pesquisar&livre=@CNOT%3D'019307'",
+    data: "19/02/2026",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19022026-Repetitivo-define-efeitos-da-quitacao-da-divida-em-imovel-com-alienacao-fiduciaria-apos-a-Lei-13-4652017.aspx",
   },
 ];

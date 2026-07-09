@@ -22,14 +22,6 @@ export function CaseCard({ caso, tema }: Props) {
         >
           {caso.data}
         </span>
-        {caso.temaRepetitivo && (
-          <span
-            className="rounded-full border px-2 py-1 font-medium"
-            style={{ borderColor: "var(--brand-green)", color: "var(--brand-green)" }}
-          >
-            {caso.temaRepetitivo}
-          </span>
-        )}
       </div>
 
       <h3 className="mt-2 text-base font-semibold" style={{ color: "var(--ink-primary)" }}>

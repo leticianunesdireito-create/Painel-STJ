@@ -1,11 +1,6 @@
 import type { Repetitivo } from "../types";
 
-interface Props {
-  repetitivo: Repetitivo;
-  onVerNoticias: (numeroTema: string) => void;
-}
-
-export function RepetitivoCard({ repetitivo, onVerNoticias }: Props) {
+export function RepetitivoCard({ repetitivo }: { repetitivo: Repetitivo }) {
   return (
     <article
       className="rounded-lg border p-4 shadow-sm"
@@ -34,26 +29,16 @@ export function RepetitivoCard({ repetitivo, onVerNoticias }: Props) {
         {repetitivo.questao}
       </p>
 
-      <div className="mt-3 flex flex-wrap items-center gap-2">
-        <a
-          href={repetitivo.fonte}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-semibold text-white"
-          style={{ background: "var(--brand-orange-btn)" }}
-        >
-          <span aria-hidden="true">📖</span>
-          <span>Ler íntegra no STJ ↗</span>
-        </a>
-        <button
-          type="button"
-          onClick={() => onVerNoticias(repetitivo.numero)}
-          className="rounded-md border px-3 py-1.5 text-sm font-medium"
-          style={{ borderColor: "var(--border)", color: "var(--ink-primary)" }}
-        >
-          Ver notícias relacionadas →
-        </button>
-      </div>
+      <a
+        href={repetitivo.fonte}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-3 flex w-fit items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-semibold text-white"
+        style={{ background: "var(--brand-orange-btn)" }}
+      >
+        <span aria-hidden="true">📖</span>
+        <span>Ler íntegra no STJ ↗</span>
+      </a>
     </article>
   );
 }

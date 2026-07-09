@@ -7,15 +7,14 @@ interface Props {
   repetitivos: Repetitivo[];
   aberto: boolean;
   onToggle: () => void;
-  onVerNoticias: (numeroTema: string) => void;
 }
 
-export function RepetitivoTemaSection({ tema, repetitivos, aberto, onToggle, onVerNoticias }: Props) {
+export function RepetitivoTemaSection({ tema, repetitivos, aberto, onToggle }: Props) {
   return (
     <AccordionSection tema={tema} count={repetitivos.length} aberto={aberto} onToggle={onToggle}>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {repetitivos.map((rep) => (
-          <RepetitivoCard key={rep.numero} repetitivo={rep} onVerNoticias={onVerNoticias} />
+          <RepetitivoCard key={rep.numero} repetitivo={rep} />
         ))}
       </div>
     </AccordionSection>
