@@ -14,7 +14,7 @@ export function Header() {
             <span className="ml-2 text-sm text-white/70">Jurídico</span>
           </div>
           <h1 className="mt-2 text-2xl font-semibold sm:text-3xl">
-            Painel STJ — Construção Civil e Incorporação Imobiliária
+            Painel de Notícias — Incorporação Imobiliária e Loteamentos
           </h1>
           <p className="mt-1 max-w-3xl text-sm text-white/80">
             Monitoramento de jurisprudência do STJ para a defesa da MRV

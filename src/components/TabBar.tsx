@@ -14,17 +14,17 @@ export function TabBar({ aba, onChange, totalNoticias, totalRepetitivos, totalIn
       <TabButton
         active={aba === "noticias"}
         onClick={() => onChange("noticias")}
-        label={`Notícias e Decisões (${totalNoticias})`}
+        label={`Jurisprudência STJ (${totalNoticias})`}
       />
       <TabButton
         active={aba === "repetitivos"}
         onClick={() => onChange("repetitivos")}
-        label={`Recursos Repetitivos (${totalRepetitivos})`}
+        label={`Repetitivos (${totalRepetitivos})`}
       />
       <TabButton
         active={aba === "insights"}
         onClick={() => onChange("insights")}
-        label={`Insights (${totalInsights})`}
+        label={`Notícias (${totalInsights})`}
       />
     </div>
   );
