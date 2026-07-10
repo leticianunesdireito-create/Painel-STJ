@@ -173,4 +173,23 @@ export const insights: Insight[] = [
     ],
     normativo: true,
   },
+  {
+    id: "insight-10",
+    categoria: "Normativo — STJ",
+    titulo: "STJ passa a exigir resumo obrigatório em petições e recursos",
+    data: "30/06/2026",
+    resumo:
+      "A Emenda Regimental nº 53/STJ criou o art. 343-A do Regimento Interno, exigindo que toda petição inicial de ação originária e todo recurso dirigido ao STJ contenha um resumo dos fundamentos de fato e de direito, dos pedidos formulados, do teor das decisões impugnadas e dos dispositivos legais invocados.",
+    referencia: "Emenda Regimental STJ nº 53, de 30/06/2026",
+    fonte: "https://www.conjur.com.br/2026-jul-06/recursos-e-peticoes-ao-stj-terao-de-resumir-fatos-pedidos-e-decisoes/",
+    previsaoLegal:
+      "Até então, o Regimento Interno do STJ (RISTJ) não exigia formalmente um resumo padronizado nas petições e recursos — a exigência é inteiramente nova, criada pela própria Emenda Regimental nº 53/2026 (novo art. 343-A do RISTJ), cuja regulamentação de formato ainda será editada pela Presidência do Tribunal.",
+    analise:
+      "A mudança busca aprimorar a triagem processual diante do volume recorde de processos (mais de 260 mil só no primeiro semestre de 2026). Peças que não observarem o novo padrão de resumo — quando a regulamentação de formato for publicada — correm risco de questionamento formal ou de prejudicar a compreensão célere do caso pelos gabinetes.",
+    providenciaSugerida: [
+      "Atualizar imediatamente os modelos/minutas internas de recursos especiais, agravos e ações originárias da MRV para incluir a seção de resumo exigida pelo art. 343-A do RISTJ, assim que a Presidência do STJ publicar a regulamentação de formato.",
+      "Treinar o time de contencioso (interno e escritórios parceiros) sobre a nova exigência, evitando que recursos sejam devolvidos ou tenham seu exame prejudicado por ausência do resumo.",
+    ],
+    normativo: true,
+  },
 ];
