@@ -1,13 +1,14 @@
-type Aba = "noticias" | "repetitivos";
+type Aba = "noticias" | "repetitivos" | "insights";
 
 interface Props {
   aba: Aba;
   onChange: (aba: Aba) => void;
   totalNoticias: number;
   totalRepetitivos: number;
+  totalInsights: number;
 }
 
-export function TabBar({ aba, onChange, totalNoticias, totalRepetitivos }: Props) {
+export function TabBar({ aba, onChange, totalNoticias, totalRepetitivos, totalInsights }: Props) {
   return (
     <div className="mx-auto flex max-w-6xl gap-2 px-4 pt-4 sm:px-6" role="tablist">
       <TabButton
@@ -19,6 +20,11 @@ export function TabBar({ aba, onChange, totalNoticias, totalRepetitivos }: Props
         active={aba === "repetitivos"}
         onClick={() => onChange("repetitivos")}
         label={`Recursos Repetitivos (${totalRepetitivos})`}
+      />
+      <TabButton
+        active={aba === "insights"}
+        onClick={() => onChange("insights")}
+        label={`Insights (${totalInsights})`}
       />
     </div>
   );

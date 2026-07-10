@@ -40,3 +40,16 @@ export interface Repetitivo {
   data: string; // data da fixação da tese ou da notícia mais recente sobre o tema
   fonte: string;
 }
+
+export interface Insight {
+  id: string;
+  categoria: string; // rótulo livre, ex: "Direito Ambiental", fora dos 8 temas específicos
+  titulo: string;
+  data: string;
+  resumo: string;
+  referencia?: string;
+  fonte: string;
+  previsaoLegal: string; // o que a legislação prevê sobre o ponto
+  entendimentoSTJ: string; // o que o STJ decidiu/está entendendo (confirma ou diverge da lei)
+  providenciaSugerida: string[]; // ação concreta recomendada (manter prática, revisar contrato, alerta ao time de defesa etc.)
+}

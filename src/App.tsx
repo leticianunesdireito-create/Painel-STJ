@@ -2,14 +2,16 @@ import { useState } from "react";
 import { temas } from "./data/temas";
 import { casos } from "./data/casos";
 import { repetitivos } from "./data/repetitivos";
+import { insights } from "./data/insights";
 import { Header } from "./components/Header";
 import { TabBar } from "./components/TabBar";
 import { NewsTab } from "./components/NewsTab";
 import { RepetitivosTab } from "./components/RepetitivosTab";
+import { InsightsTab } from "./components/InsightsTab";
 
-const ATUALIZADO_EM = "09/07/2026";
+const ATUALIZADO_EM = "10/07/2026";
 
-type Aba = "noticias" | "repetitivos";
+type Aba = "noticias" | "repetitivos" | "insights";
 
 function App() {
   const [aba, setAba] = useState<Aba>("noticias");
@@ -23,13 +25,16 @@ function App() {
         onChange={setAba}
         totalNoticias={casos.length}
         totalRepetitivos={repetitivos.length}
+        totalInsights={insights.length}
       />
 
       <main className="py-4">
         {aba === "noticias" ? (
           <NewsTab casos={casos} temas={temas} />
-        ) : (
+        ) : aba === "repetitivos" ? (
           <RepetitivosTab repetitivos={repetitivos} temas={temas} />
+        ) : (
+          <InsightsTab insights={insights} />
         )}
       </main>
 
