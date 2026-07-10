@@ -7,9 +7,21 @@ export function InsightCard({ insight }: { insight: Insight }) {
   return (
     <article
       className="rounded-lg border p-4 shadow-sm"
-      style={{ background: "var(--card-bg)", borderColor: "var(--border)" }}
+      style={{
+        background: "var(--card-bg)",
+        borderColor: insight.normativo ? "var(--brand-orange-decor)" : "var(--border)",
+        borderLeftWidth: insight.normativo ? "4px" : "1px",
+      }}
     >
       <div className="flex flex-wrap items-center gap-2 text-xs">
+        {insight.normativo && (
+          <span
+            className="flex items-center gap-1 rounded-full px-2 py-1 font-semibold text-white"
+            style={{ background: "var(--brand-orange-decor)" }}
+          >
+            <span aria-hidden="true">📋</span> Novo normativo
+          </span>
+        )}
         <span
           className="rounded-full border px-2 py-1 font-medium"
           style={{ borderColor: "var(--brand-green)", color: "var(--brand-green)" }}

@@ -19,7 +19,13 @@ export function InsightsTab({ insights }: { insights: Insight[] }) {
     );
   }, [recentes, query]);
 
-  const ordenados = useMemo(() => ordenarPorDataRecente(filtrados), [filtrados]);
+  const ordenados = useMemo(() => {
+    const porData = ordenarPorDataRecente(filtrados);
+    // Normativos (STJ/CNJ/ONR) recebem destaque: aparecem primeiro, mantendo a ordem por data dentro de cada grupo.
+    const normativos = porData.filter((i) => i.normativo);
+    const outros = porData.filter((i) => !i.normativo);
+    return [...normativos, ...outros];
+  }, [filtrados]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -30,9 +36,11 @@ export function InsightsTab({ insights }: { insights: Insight[] }) {
           imobiliária, loteamento e construção civil quanto temas processuais gerais (honorários,
           prescrição, ônus da prova etc.) que facilitam a atuação no contencioso como um todo.
           Selecionados por avaliação própria. Diferente das outras abas, aqui a busca também inclui
-          os portais especializados Migalhas e Conjur, além do stj.jus.br. Para cada item, trazemos
-          a previsão legal (quando houver contraste relevante), a análise jurídica/entendimento dos
-          tribunais e uma providência concreta sugerida.
+          os portais especializados Migalhas, Conjur, o CNJ e a ONR (Operador Nacional do Registro
+          de Imóveis Eletrônico), além do stj.jus.br. Novos normativos do STJ, CNJ e ONR aparecem em
+          destaque, no topo da lista. Para cada item, trazemos a previsão legal (quando houver
+          contraste relevante), a análise jurídica/entendimento dos tribunais e uma providência
+          concreta sugerida.
         </p>
         <input
           type="search"

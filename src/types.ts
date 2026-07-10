@@ -52,4 +52,5 @@ export interface Insight {
   previsaoLegal?: string; // o que a legislação prevê sobre o ponto, quando houver contraste relevante com a lei
   analise: string; // entendimento do STJ/tribunais ou análise jurídica da notícia
   providenciaSugerida: string[]; // ação concreta recomendada (manter prática, revisar contrato, alerta ao time de defesa etc.)
+  normativo?: boolean; // true para novos normativos do STJ/CNJ/ONR (recebem destaque visual)
 }

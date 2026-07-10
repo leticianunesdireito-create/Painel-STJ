@@ -8,8 +8,11 @@ import type { Insight } from "../types";
  * prescrição, ônus da prova etc.) que facilitam a atuação no contencioso
  * como um todo, independentemente do assunto de fundo. Diferente das outras
  * duas abas, aqui a busca inclui, além de stj.jus.br, os portais
- * especializados Migalhas (migalhas.com.br) e Conjur (conjur.com.br). A aba
- * exibe apenas itens dos últimos 6 meses (filtro em `InsightsTab`, via `data`).
+ * especializados Migalhas (migalhas.com.br) e Conjur (conjur.com.br), o CNJ
+ * (cnj.jus.br) e o ONR — Operador Nacional do Registro de Imóveis Eletrônico
+ * (registrodeimoveis.org.br/onr). Novos normativos do STJ/CNJ/ONR recebem
+ * destaque visual (`normativo: true`). A aba exibe apenas itens dos últimos
+ * 6 meses (filtro em `InsightsTab`, via `data`).
  */
 export const insights: Insight[] = [
   {
@@ -131,5 +134,43 @@ export const insights: Insight[] = [
       "Mapear processos da MRV que possam ser afetados por modulação de efeitos de teses vinculantes (STF/STJ) já em curso, para reavaliar risco de sucumbência quando o Tema 986 for julgado.",
       "Aguardar a fixação da tese antes de firmar posição definitiva sobre pedidos de restituição de honorários em casos afetados por modulação.",
     ],
+  },
+  {
+    id: "insight-08",
+    categoria: "Normativo — CNJ/ONR",
+    titulo: "Judiciário adota plataforma única para ordens de restrição e penhora de imóveis (Constrijud)",
+    data: "12/05/2026",
+    resumo:
+      "O Provimento 224/CNJ tornou obrigatório o uso do Constrijud, sistema único e nacional para envio, processamento e cumprimento de ordens judiciais de penhora, arresto e outras constrições sobre imóveis, com implantação por fases até agosto de 2026.",
+    referencia: "Provimento CNJ nº 224, de 12/05/2026",
+    fonte: "https://www.cnj.jus.br/judiciario-adota-plataforma-unica-para-ordens-de-restricao-e-penhora-de-imoveis/",
+    previsaoLegal:
+      "Não havia sistema nacional único obrigatório para envio de ordens de constrição judicial sobre imóveis aos cartórios — cada tribunal/comarca comunicava os registros de forma não padronizada.",
+    analise:
+      "O CNJ centraliza e uniformiza, via Constrijud (módulo do Serp, operado pela ONR), o fluxo de comunicação entre o Judiciário e os cartórios de registro de imóveis para qualquer penhora, arresto ou constrição — com prazo de adaptação dos tribunais de até 2 anos, mas plataforma operacional em todo o país já em agosto de 2026.",
+    providenciaSugerida: [
+      "Orientar o time de contencioso e o societário a monitorar o Constrijud como novo canal oficial de constrições sobre imóveis da MRV e de suas SPEs, evitando surpresas por penhoras não comunicadas pelos meios antigos.",
+      "Atualizar o checklist de due diligence imobiliária (aquisição de terrenos, garantias) para consultar também o Constrijud/Serp, à medida que a plataforma for implantada nas comarcas relevantes.",
+    ],
+    normativo: true,
+  },
+  {
+    id: "insight-09",
+    categoria: "Normativo — ONR",
+    titulo: "ONR publica Instrução Técnica que padroniza dados do Registro Eletrônico de Imóveis (SREI)",
+    data: "04/05/2026",
+    resumo:
+      "A Instrução Técnica de Normalização nº 004/2026 (ITN 004) estabelece as especificações técnicas do SREI, definindo como atos, documentos e informações devem ser estruturados pelos 3.621 cartórios de registro de imóveis do país que operam o sistema.",
+    referencia: "ITN nº 004/2026 — ONR",
+    fonte: "https://www.registrodeimoveis.org.br/onr-detalha-avancos-na-estruturacao-nacional-do-srei?fe=2",
+    previsaoLegal:
+      "A Lei 11.977/2009 e provimentos do CNJ já previam a implantação do registro eletrônico de imóveis (SREI), mas sem uma especificação técnica nacional unificada de dados — cada cartório podia estruturar informações de forma distinta.",
+    analise:
+      "A ITN 004/2026 padroniza nacionalmente a estrutura de dados do registro eletrônico, o que deve acelerar a interoperabilidade entre cartórios, reduzir divergências cadastrais e, segundo a ONR, agilizar a análise de crédito imobiliário ao facilitar a consulta de matrículas padronizadas.",
+    providenciaSugerida: [
+      "Acompanhar a implantação da ITN 004 nas praças onde a MRV atua, já que a padronização pode alterar o formato de certidões/matrículas usadas em due diligence e em garantias de financiamento.",
+      "Avisar o time de registros/cartórios da MRV sobre o novo padrão técnico, para adequar processos internos de conferência de matrícula ao novo formato assim que os cartórios locais migrarem.",
+    ],
+    normativo: true,
   },
 ];

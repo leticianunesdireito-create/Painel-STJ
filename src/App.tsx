@@ -46,8 +46,8 @@ function App() {
           Painel interno — Jurídico MRV Engenharia e Participações S/A.
           Conteúdo atualizado em {ATUALIZADO_EM}. Notícias e Decisões e Recursos
           Repetitivos têm fonte exclusivamente oficial do STJ (stj.jus.br); a
-          aba Insights também usa Migalhas e Conjur. Não constitui parecer
-          jurídico.
+          aba Insights também usa Migalhas, Conjur, CNJ e ONR. Não constitui
+          parecer jurídico.
         </p>
       </footer>
     </div>

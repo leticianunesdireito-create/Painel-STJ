@@ -39,7 +39,7 @@ export function Header() {
             <strong>Aviso:</strong> conteúdo de apoio jurídico interno. As
             abas Notícias e Decisões e Recursos Repetitivos usam
             exclusivamente fontes oficiais do STJ (stj.jus.br); a aba
-            Insights também traz análises de Migalhas e Conjur. Não
+            Insights também traz análises de Migalhas, Conjur, CNJ e ONR. Não
             substitui parecer jurídico. Confira sempre o inteiro teor do
             acórdão, o número do processo e a data de julgamento na fonte
             oficial antes de usar em petição.
