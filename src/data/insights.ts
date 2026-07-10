@@ -2,12 +2,14 @@ import type { Insight } from "../types";
 
 /**
  * Notícias/decisões/análises que não se encaixam nos 8 temas específicos do
- * painel, mas que — por avaliação própria, considerando o mercado de
- * incorporação imobiliária, loteamento e construção civil — podem
- * interessar ao Jurídico da MRV. Diferente das outras duas abas, aqui a
- * busca inclui, além de stj.jus.br, os portais especializados Migalhas
- * (migalhas.com.br) e Conjur (conjur.com.br). A aba exibe apenas itens dos
- * últimos 6 meses (filtro aplicado em `InsightsTab`, com base no campo `data`).
+ * painel, mas que — por avaliação própria — podem interessar ao Jurídico da
+ * MRV: tanto temas afetos ao mercado de incorporação imobiliária, loteamento
+ * e construção civil quanto temas processuais gerais (honorários,
+ * prescrição, ônus da prova etc.) que facilitam a atuação no contencioso
+ * como um todo, independentemente do assunto de fundo. Diferente das outras
+ * duas abas, aqui a busca inclui, além de stj.jus.br, os portais
+ * especializados Migalhas (migalhas.com.br) e Conjur (conjur.com.br). A aba
+ * exibe apenas itens dos últimos 6 meses (filtro em `InsightsTab`, via `data`).
  */
 export const insights: Insight[] = [
   {
@@ -94,6 +96,40 @@ export const insights: Insight[] = [
     providenciaSugerida: [
       "Para produtos de casas isoladas/geminadas em loteamentos já aprovados, avaliar com o time de produto/jurídico essa modalidade simplificada (sem condomínio edilício) como alternativa de estruturação, reduzindo custo e complexidade registral do empreendimento.",
       "Alinhar com os cartórios de registro de imóveis das praças de atuação os requisitos documentais exigidos para essa modalidade, evitando atrasos no registro da incorporação.",
+    ],
+  },
+  {
+    id: "insight-06",
+    categoria: "Direito Processual Civil",
+    titulo: "Honorários são devidos mesmo com extinção da execução fiscal por pagamento antes da citação",
+    data: "01/07/2026",
+    resumo:
+      "Julgamento do Tema 1413: a Primeira Seção fixou que são devidos honorários advocatícios em execução extinta por perda de objeto quando o devedor paga a dívida após o ajuizamento, mesmo que antes da citação.",
+    referencia: "Tema 1413",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01072026-Sao-devidos-honorarios-mesmo-quando-execucao-fiscal-e-extinta-pelo-pagamento-da-divida-antes-da-citacao.aspx",
+    previsaoLegal:
+      "O art. 85 do CPC fixa a sucumbência como regra geral para honorários, com exceções pelo princípio da causalidade (art. 85, §10, e art. 90); a lei não trata expressamente do marco temporal da citação como divisor para esse fim em execuções extintas por pagamento.",
+    analise:
+      "O STJ definiu que o simples ajuizamento da execução já basta para caracterizar a causalidade do devedor, gerando direito a honorários do exequente ainda que o pagamento ocorra antes da citação — o marco relevante é o ajuizamento, não a citação.",
+    providenciaSugerida: [
+      "Ao ser citada/notificada extrajudicialmente sobre cobrança iminente, avaliar quitar a dívida antes do ajuizamento de qualquer execução sempre que possível, já que o pagamento após o ajuizamento (mesmo pré-citação) não afasta mais os honorários.",
+      "Orientar o time de contencioso a considerar esse precedente ao negociar acordos em fase pré-processual, pois o valor de honorários já pode estar \"travado\" assim que a ação for distribuída.",
+    ],
+  },
+  {
+    id: "insight-07",
+    categoria: "Direito Processual Civil",
+    titulo: "STJ vai definir quem paga honorários de sucumbência em caso de modulação de tese",
+    data: "26/04/2026",
+    resumo:
+      "Julgamento do Tema 986: a Corte discute, em repetitivo, quem deve arcar com os honorários sucumbenciais e se há direito a restituição quando a modulação de efeitos de uma tese altera o resultado do processo após decisão anterior.",
+    referencia: "Tema 986",
+    fonte: "https://www.conjur.com.br/2026-abr-26/stj-vai-definir-quem-paga-honorarios-de-sucumbencia-gracas-a-modulacao-de-tese/",
+    analise:
+      "A controvérsia nasce de casos em que a parte era originalmente vencedora, mas passou a ser vencida (ou vice-versa) após modulação de efeitos de tese vinculante superveniente — o STJ vai definir se a sucumbência se recalcula e se cabe restituição de honorários já pagos.",
+    providenciaSugerida: [
+      "Mapear processos da MRV que possam ser afetados por modulação de efeitos de teses vinculantes (STF/STJ) já em curso, para reavaliar risco de sucumbência quando o Tema 986 for julgado.",
+      "Aguardar a fixação da tese antes de firmar posição definitiva sobre pedidos de restituição de honorários em casos afetados por modulação.",
     ],
   },
 ];
