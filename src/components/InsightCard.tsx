@@ -42,7 +42,7 @@ export function InsightCard({ insight }: { insight: Insight }) {
           style={{ background: "var(--brand-orange-btn)" }}
         >
           <span aria-hidden="true">📖</span>
-          <span>Ler íntegra no STJ ↗</span>
+          <span>Ler íntegra na fonte ↗</span>
         </a>
         <button
           type="button"
@@ -51,26 +51,28 @@ export function InsightCard({ insight }: { insight: Insight }) {
           style={{ borderColor: "var(--border)", color: "var(--ink-primary)" }}
           aria-expanded={aberto}
         >
-          {aberto ? "Ocultar análise" : "Lei x entendimento do STJ ▾"}
+          {aberto ? "Ocultar análise" : "Ver análise ▾"}
         </button>
       </div>
 
       {aberto && (
         <div className="mt-4 flex flex-col gap-3 border-t pt-4" style={{ borderColor: "var(--border)" }}>
+          {insight.previsaoLegal && (
+            <div>
+              <p className="text-sm font-semibold" style={{ color: "var(--ink-primary)" }}>
+                Previsão legal
+              </p>
+              <p className="mt-1 text-sm" style={{ color: "var(--ink-secondary)" }}>
+                {insight.previsaoLegal}
+              </p>
+            </div>
+          )}
           <div>
             <p className="text-sm font-semibold" style={{ color: "var(--ink-primary)" }}>
-              Previsão legal
+              Entendimento / análise
             </p>
             <p className="mt-1 text-sm" style={{ color: "var(--ink-secondary)" }}>
-              {insight.previsaoLegal}
-            </p>
-          </div>
-          <div>
-            <p className="text-sm font-semibold" style={{ color: "var(--ink-primary)" }}>
-              Entendimento do STJ
-            </p>
-            <p className="mt-1 text-sm" style={{ color: "var(--ink-secondary)" }}>
-              {insight.entendimentoSTJ}
+              {insight.analise}
             </p>
           </div>
           <div className="rounded-md p-3" style={{ background: "rgba(31,92,60,0.08)" }}>

@@ -49,7 +49,7 @@ export interface Insight {
   resumo: string;
   referencia?: string;
   fonte: string;
-  previsaoLegal: string; // o que a legislação prevê sobre o ponto
-  entendimentoSTJ: string; // o que o STJ decidiu/está entendendo (confirma ou diverge da lei)
+  previsaoLegal?: string; // o que a legislação prevê sobre o ponto, quando houver contraste relevante com a lei
+  analise: string; // entendimento do STJ/tribunais ou análise jurídica da notícia
   providenciaSugerida: string[]; // ação concreta recomendada (manter prática, revisar contrato, alerta ao time de defesa etc.)
 }

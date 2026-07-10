@@ -36,8 +36,10 @@ export function Header() {
         <div className="mx-auto flex max-w-6xl items-start gap-2">
           <span aria-hidden="true">⚠</span>
           <p>
-            <strong>Aviso:</strong> conteúdo de apoio jurídico interno, com
-            base em notícias e informativos oficiais do STJ (stj.jus.br). Não
+            <strong>Aviso:</strong> conteúdo de apoio jurídico interno. As
+            abas Notícias e Decisões e Recursos Repetitivos usam
+            exclusivamente fontes oficiais do STJ (stj.jus.br); a aba
+            Insights também traz análises de Migalhas e Conjur. Não
             substitui parecer jurídico. Confira sempre o inteiro teor do
             acórdão, o número do processo e a data de julgamento na fonte
             oficial antes de usar em petição.

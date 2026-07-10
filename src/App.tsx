@@ -44,8 +44,10 @@ function App() {
       >
         <p>
           Painel interno — Jurídico MRV Engenharia e Participações S/A.
-          Conteúdo atualizado em {ATUALIZADO_EM}, com base em fontes oficiais do
-          STJ (stj.jus.br). Não constitui parecer jurídico.
+          Conteúdo atualizado em {ATUALIZADO_EM}. Notícias e Decisões e Recursos
+          Repetitivos têm fonte exclusivamente oficial do STJ (stj.jus.br); a
+          aba Insights também usa Migalhas e Conjur. Não constitui parecer
+          jurídico.
         </p>
       </footer>
     </div>

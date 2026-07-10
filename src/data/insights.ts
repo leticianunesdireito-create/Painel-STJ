@@ -1,115 +1,99 @@
 import type { Insight } from "../types";
 
 /**
- * Notícias/decisões do STJ que não se encaixam nos 8 temas específicos do
+ * Notícias/decisões/análises que não se encaixam nos 8 temas específicos do
  * painel, mas que — por avaliação própria, considerando o mercado de
  * incorporação imobiliária, loteamento e construção civil — podem
- * interessar ao Jurídico da MRV. Fonte exclusivamente oficial (stj.jus.br).
- * Para cada item: o que a lei prevê x o que o STJ está de fato decidindo,
- * e uma providência concreta sugerida.
+ * interessar ao Jurídico da MRV. Diferente das outras duas abas, aqui a
+ * busca inclui, além de stj.jus.br, os portais especializados Migalhas
+ * (migalhas.com.br) e Conjur (conjur.com.br). A aba exibe apenas itens dos
+ * últimos 6 meses (filtro aplicado em `InsightsTab`, com base no campo `data`).
  */
 export const insights: Insight[] = [
   {
     id: "insight-01",
-    categoria: "Direito Ambiental",
-    titulo: "Ibama pode fiscalizar edificação por risco ambiental, mesmo com licença de outro órgão",
-    data: "20/02/2025",
+    categoria: "Recuperação Judicial",
+    titulo: "STJ veta em definitivo recuperação judicial de SPE com patrimônio de afetação",
+    data: "12/05/2026",
     resumo:
-      "A Primeira Turma decidiu que o Ibama pode fiscalizar e autuar construções com risco ambiental (ex.: em área de preservação permanente) ainda que exista licença de edificação concedida por outro órgão público (municipal/estadual).",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/20022025-Ibama-pode-fiscalizar-edificacao-por-risco-ambiental--ainda-que-haja-licenca-de-outro-orgao-publico.aspx",
+      "A Terceira Turma reafirmou, por unanimidade, no REsp 2.205.480/SP (grupo Rossi), que SPEs de incorporação imobiliária com patrimônio de afetação não se submetem à recuperação judicial sob nenhum ângulo — nem mesmo para dívidas gerais do grupo — por incompatibilidade sistêmica entre os dois institutos.",
+    referencia: "REsp 2.205.480/SP, Rel. Min. Humberto Martins, Terceira Turma",
+    fonte: "https://www.migalhas.com.br/quentes/455790/stj-sociedades-de-proposito-especifico-nao-se-submetem-a-recuperacao",
     previsaoLegal:
-      "A competência para fiscalização ambiental é comum entre os entes federativos (art. 23, VI, CF; Lei Complementar 140/2011), coexistindo com a competência de licenciamento de edificações do Município/Estado — a lei não trata as duas esferas como excludentes.",
-    entendimentoSTJ:
-      "O STJ confirmou e reforçou essa leitura: a licença de edificação de um órgão não afasta a competência fiscalizatória ambiental federal (Ibama), aplicando a Súmula 613/STJ (não há direito adquirido à manutenção de situação que gere prejuízo ao meio ambiente).",
+      "A Lei 11.101/2005 (Lei de Recuperação Judicial e Falência) não trata expressamente da relação entre o regime de patrimônio de afetação da incorporação imobiliária (Lei 4.591/1964) e a recuperação judicial — é uma lacuna que a jurisprudência vinha preenchendo caso a caso.",
+    analise:
+      "O STJ fechou definitivamente a questão: SPE com patrimônio de afetação não pode se submeter à recuperação judicial em nenhuma hipótese, nem para equacionar dívidas gerais do grupo controlador — o modelo funciona exatamente como desenhado, e a impossibilidade de recuperação é o que garante a previsibilidade do patrimônio afetado.",
     providenciaSugerida: [
-      "Manter dossiê ambiental próprio e independente da licença municipal para empreendimentos próximos a áreas ambientalmente sensíveis — a licença local não é escudo suficiente contra autuação federal.",
-      "Orientar o time de sustentabilidade/compliance a incluir consulta prévia a restrições ambientais federais (não só municipais) na due diligence de novos terrenos.",
+      "Usar este precedente para reforçar, em pareceres e negociações, que o patrimônio de afetação de cada SPE da MRV é blindagem absoluta contra recuperação judicial de outras empresas do grupo econômico.",
+      "Atualizar qualquer entendimento interno anterior que ainda cogitasse submissão parcial de SPE à recuperação judicial — a tese agora é de exclusão total e definitiva.",
     ],
   },
   {
     id: "insight-02",
-    categoria: "Direito Ambiental",
-    titulo: "Erro na concessão de licença não isenta empresa de pagar pelo dano ambiental",
-    data: "s/d",
+    categoria: "Tributário Imobiliário",
+    titulo: "Tributação do patrimônio de afetação das incorporações na reforma tributária",
+    data: "20/01/2026",
     resumo:
-      "A Terceira Turma manteve condenação por dano ambiental decorrente de construção em área de Mata Atlântica, mesmo tendo a empresa obtido licenças do poder público — o erro do órgão licenciador não exime a responsabilidade do empreendedor.",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/Erro-na-concessao-de-licenca-nao-isenta-empresa-de-pagar-pelo-dano-ambiental.aspx",
+      "Artigo analisa como a reforma tributária (EC 132/2023 e leis complementares do IBS/CBS) impacta o Regime Especial de Tributação (RET) das incorporações com patrimônio de afetação, e como deve se dar a transição do regime atual para o novo sistema.",
+    fonte: "https://www.conjur.com.br/2026-jan-20/reforma-tributaria-sobre-o-patrimonio-de-afetacao-das-incorporacoes-imobiliarias/",
     previsaoLegal:
-      "Art. 14, §1º, da Lei 6.938/1981 — a responsabilidade civil por dano ambiental é objetiva, independentemente de culpa do poluidor ou de terceiros (incluindo o próprio poder público licenciador).",
-    entendimentoSTJ:
-      "O STJ aplicou a lei à risca: eventual falha do órgão público na análise do licenciamento não exclui o dever do empreendedor de reparar o dano ambiental causado, mesmo agindo de boa-fé com base na licença obtida.",
+      "A Lei 10.931/2004 prevê o RET (alíquota unificada sobre a receita mensal recebida) para incorporações submetidas ao patrimônio de afetação; a EC 132/2023 ainda está em fase de regulamentação quanto à convivência desse regime especial com o novo IBS/CBS.",
+    analise:
+      "O artigo aponta incertezas regulatórias sobre a manutenção do RET no novo sistema tributário e alerta para o risco de aumento de carga tributária das incorporações durante o período de transição, se a regulamentação não preservar expressamente o regime especial.",
     providenciaSugerida: [
-      "Manter prática de due diligence ambiental própria e independente (laudos técnicos externos) antes de lançar empreendimentos em áreas com vegetação nativa ou histórico de sensibilidade ambiental, sem se apoiar apenas na licença do poder público.",
-      "Avaliar a inclusão de cláusulas de garantia/indenização por passivo ambiental pré-existente em contratos de aquisição de terrenos.",
+      "Acompanhar de perto a regulamentação infralegal da reforma tributária quanto à manutenção do RET, envolvendo o time tributário da MRV nas consultas públicas/audiências sobre o tema.",
+      "Simular o impacto financeiro de cada cenário de transição (manutenção integral do RET x migração parcial para IBS/CBS) nos empreendimentos em patrimônio de afetação já em curso.",
     ],
   },
   {
     id: "insight-03",
-    categoria: "Recuperação Judicial",
-    titulo: "Fim do patrimônio de afetação exige quitação do financiamento",
-    data: "18/10/2024",
+    categoria: "Tributário Imobiliário",
+    titulo: "ITBI sobre integralização de imóveis ao capital social: limites da atuação municipal",
+    data: "15/03/2026",
     resumo:
-      "O STJ definiu que o encerramento do regime de patrimônio de afetação de um empreendimento só pode ocorrer após a extinção das obrigações com o agente financiador da obra, protegendo o crédito do banco até a quitação.",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/18102024-Extincao-de-obrigacoes-com-agente-financiador-e-condicao-para-encerrar-patrimonio-de-afetacao.aspx",
+      "Artigo discute os limites da atuação dos Municípios ao exigir ITBI sobre a integralização de imóveis ao capital social de empresas, questionando a imunidade constitucional quando o Fisco alega atividade preponderantemente imobiliária do adquirente.",
+    fonte: "https://www.conjur.com.br/2026-mar-15/itbi-sobre-integralizacao-de-imoveis-em-pjs-limites-da-atuacao-municipal-e-da-legislacao/",
     previsaoLegal:
-      "O art. 31-E da Lei 4.591/1964 lista hipóteses objetivas de extinção do patrimônio de afetação (averbação da construção com registro dos títulos em nome dos adquirentes, decurso do prazo de carência etc.), sem mencionar expressamente a quitação do financiamento bancário como condição.",
-    entendimentoSTJ:
-      "O STJ foi além da literalidade do art. 31-E e condicionou o encerramento também à quitação das obrigações com o agente financeiro que custeou a obra, mesmo sem previsão expressa nesse sentido, para proteger o crédito do banco.",
+      "Art. 156, §2º, I, da Constituição Federal — imunidade de ITBI na transmissão de bens para integralização de capital social, salvo se a atividade preponderante do adquirente for a compra e venda, locação ou arrendamento de imóveis.",
+    analise:
+      "O texto critica autuações municipais que desconsideram a imunidade sem comprovar adequadamente a atividade preponderante imobiliária, defendendo interpretação mais rigorosa do requisito constitucional antes de afastar a imunidade.",
     providenciaSugerida: [
-      "Incluir a confirmação de quitação do financiamento da obra como item obrigatório no checklist interno de encerramento contábil/jurídico do patrimônio de afetação de cada SPE, mesmo quando a literalidade da lei sugerir que os demais requisitos já bastariam.",
-      "Alinhar com o time financeiro para não declarar extinto o regime de afetação perante investidores/auditoria antes dessa quitação, evitando questionamento do agente financeiro.",
+      "Ao integralizar imóveis ao capital de SPEs/subsidiárias do grupo, documentar formalmente a atividade/objeto social para sustentar a imunidade de ITBI caso questionada pelo Município.",
+      "Impugnar administrativamente autuações municipais de ITBI sobre integralização que não comprovem, com apuração regular, a atividade preponderantemente imobiliária exigida pela CF.",
     ],
   },
   {
     id: "insight-04",
-    categoria: "Recuperação Judicial",
-    titulo: "A submissão de SPE imobiliária à recuperação judicial",
-    data: "24/05/2022",
+    categoria: "Direito Societário / Registral",
+    titulo: "Integralização de imóvel ao capital social dispensa escritura pública",
+    data: "18/06/2026",
     resumo:
-      "A Terceira Turma definiu hipóteses em que uma Sociedade de Propósito Específico (SPE) imobiliária, inclusive com patrimônio de afetação, pode se submeter à recuperação judicial, sem que isso contamine o patrimônio afetado de cada empreendimento pelas dívidas do grupo econômico.",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/24052022-Terceira-Turma-define-hipoteses-para-recuperacao-de-sociedades-de-proposito-especifico-imobiliarias.aspx",
+      "Artigo comenta reforço na jurisprudência paulista (TJSP) de que a integralização de imóvel ao capital social de uma empresa pode ser feita por instrumento particular (ato constitutivo/alteração societária), sem necessidade de escritura pública.",
+    fonte: "https://www.conjur.com.br/2026-jun-18/integralizacao-de-imovel-ao-capital-social-dispensa-escritura-publica-novo-reforco-da-jurisprudencia-paulista/",
     previsaoLegal:
-      "A Lei 11.101/2005 não veda expressamente a submissão de SPEs à recuperação judicial, mas também não trata especificamente da relação entre esse regime e o patrimônio de afetação de incorporações imobiliárias (Lei 4.591/1964) — lacuna normativa.",
-    entendimentoSTJ:
-      "O STJ preencheu a lacuna: admite a recuperação judicial da SPE, mas exige que o patrimônio de afetação de cada empreendimento permaneça segregado das demais relações jurídicas do grupo econômico, preservando os adquirentes.",
+      "O art. 108 do Código Civil exige escritura pública para negócios que visem à constituição/transferência de direitos reais sobre imóveis de valor superior a 30 salários-mínimos, salvo as exceções previstas em lei especial (como as leis societárias para integralização de capital).",
+    analise:
+      "A jurisprudência paulista tem admitido o instrumento particular (contrato/alteração social) como título hábil para registro da integralização do imóvel, dispensando a escritura pública, com base nas leis societárias específicas.",
     providenciaSugerida: [
-      "Manter rigor na segregação contábil e jurídica de cada SPE com patrimônio de afetação (fluxo de caixa próprio, contratos próprios), documentando isso de forma auditável, para sustentar a blindagem em eventual cenário de estresse financeiro de outra empresa do grupo.",
-      "Usar este precedente como referência em due diligence de eventual aquisição de terrenos/ativos de incorporadoras concorrentes em recuperação judicial.",
+      "Revisar o procedimento societário interno de aportes de imóveis a SPEs/subsidiárias para confirmar se os cartórios de registro de imóveis da praça aceitam o instrumento particular, evitando custo e tempo de escritura pública desnecessária.",
+      "Padronizar a minuta de integralização por instrumento particular com o time societário, alinhando previamente com o cartório local quando possível.",
     ],
   },
   {
     id: "insight-05",
-    categoria: "Direito Real / Multipropriedade",
-    titulo: "Terceira Turma reconhece multipropriedade como direito real e afasta penhora",
-    data: "21/09/2016",
+    categoria: "Regulatório / Incorporação",
+    titulo: "Incorporação de casas isoladas sem condomínio edilício",
+    data: "05/03/2026",
     resumo:
-      "O STJ reconheceu a multipropriedade imobiliária (time-sharing) como direito real, permitindo que o cotista de uma fração de tempo se valha de embargos de terceiro para proteger sua cota contra penhora movida contra a incorporadora proprietária registral do imóvel.",
-    referencia: "REsp 1.546.165-SP, j. 26/04/2016",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2016/2016-09-21_09-41_Terceira-Turma-reconhece-multipropriedade-como-direito-real-e-afasta-penhora.aspx",
+      "Artigo comenta a aplicação prática do art. 68 da Lei 4.591/1964 (alterado pela Lei 14.382/2022), que passou a reconhecer expressamente a incorporação de casas isoladas ou geminadas em lotes de loteamentos regularmente aprovados e registrados, sem exigir a instituição de condomínio edilício.",
+    fonte: "https://www.conjur.com.br/2026-mar-05/incorporacao-de-casas-isoladas-sem-condominio-edilicio/",
     previsaoLegal:
-      "Em 2016, a multipropriedade ainda não tinha previsão expressa no Código Civil como direito real — essa figura só foi formalmente incluída no rol dos direitos reais (art. 1.225, XIII, CC) e regulamentada pela Lei 13.777/2018, dois anos depois deste julgamento.",
-    entendimentoSTJ:
-      "O STJ reconheceu a natureza de direito real da multipropriedade por construção jurisprudencial antes mesmo de existir lei específica, protegendo os cotistas com embargos de terceiro mesmo com o registro do imóvel em nome de outra pessoa jurídica.",
+      "Art. 68 da Lei 4.591/1964, com redação dada pela Lei 14.382/2022, autoriza a incorporação de casas isoladas/geminadas em loteamento regularmente aprovado e registrado, dispensando a instituição de condomínio edilício sobre a área.",
+    analise:
+      "O artigo detalha os requisitos práticos e registrais para essa modalidade simplificada de incorporação horizontal, destacando ganhos de segurança jurídica e redução de custos frente ao condomínio edilício tradicional.",
     providenciaSugerida: [
-      "Caso a MRV avalie desenvolver produtos em regime de multipropriedade/fractional ownership, adotar desde já a estrutura formal da Lei 13.777/2018 (convenção de multipropriedade registrada, individualização das frações de tempo), que já incorporou e detalhou o entendimento fixado neste precedente.",
-      "Ficar atenta a esse precedente em eventual devida diligência de aquisição de empreendimentos de terceiros que já operem em regime de multipropriedade não formalizado.",
-    ],
-  },
-  {
-    id: "insight-06",
-    categoria: "Tributário Imobiliário",
-    titulo: "STJ define base de cálculo do ITBI em recurso repetitivo",
-    data: "09/03/2022",
-    resumo:
-      "Julgamento do Tema 1113: a Primeira Seção fixou que a base de cálculo do ITBI é o valor do imóvel transmitido em condições normais de mercado, não vinculado ao valor venal usado para o IPTU, e o Município não pode arbitrar previamente esse valor de forma unilateral.",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/09032022-Base-de-calculo-do-ITBI-e-o-valor-do-imovel-transmitido-em-condicoes-normais-de-mercado--define-Primeira-Secao.aspx",
-    previsaoLegal:
-      "O art. 148 do CTN permite ao Fisco arbitrar a base de cálculo declarada pelo contribuinte apenas mediante regular processo administrativo, quando houver fundada suspeita de que o valor declarado não reflete o valor de mercado — não autoriza arbitramento prévio e unilateral.",
-    entendimentoSTJ:
-      "O STJ confirmou a leitura garantista do CTN (Tema 1113): o valor declarado pelo contribuinte goza de presunção de veracidade, só afastável por processo administrativo próprio; o Município não pode fixar previamente um valor de referência unilateral para cobrar ITBI maior.",
-    providenciaSugerida: [
-      "Manter e organizar lastro documental de mercado (laudos, comparáveis de mercado) para os valores declarados em escrituras de aquisição de terrenos e venda de unidades, sustentando a presunção de veracidade caso o Município tente arbitrar ITBI acima do declarado.",
-      "Impugnar administrativamente, com base no Tema 1113, qualquer cobrança de ITBI fundada em valor de referência arbitrado unilateralmente pelo Município, sem o processo do art. 148 do CTN.",
+      "Para produtos de casas isoladas/geminadas em loteamentos já aprovados, avaliar com o time de produto/jurídico essa modalidade simplificada (sem condomínio edilício) como alternativa de estruturação, reduzindo custo e complexidade registral do empreendimento.",
+      "Alinhar com os cartórios de registro de imóveis das praças de atuação os requisitos documentais exigidos para essa modalidade, evitando atrasos no registro da incorporação.",
     ],
   },
 ];

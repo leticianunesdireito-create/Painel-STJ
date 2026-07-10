@@ -36,6 +36,16 @@ export function ordenarPorDataRecente<T extends { data: string }>(itens: T[]): T
   });
 }
 
+/** Mantém apenas itens com data parseável dentro dos últimos `dias` dias (padrão 180 ~ 6 meses). Itens sem data válida são excluídos. */
+export function filtrarUltimosDias<T extends { data: string }>(itens: T[], dias = 180): T[] {
+  const limite = new Date();
+  limite.setDate(limite.getDate() - dias);
+  return itens.filter((item) => {
+    const d = parseDataBR(item.data);
+    return d !== null && d >= limite;
+  });
+}
+
 export function anosDisponiveis<T extends { data: string }>(itens: T[]): number[] {
   const anos = new Set<number>();
   for (const item of itens) {
