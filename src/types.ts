@@ -5,7 +5,8 @@ export type TemaId =
   | "alienacao-fiduciaria"
   | "registro-imobiliario"
   | "corretagem"
-  | "taxa-condominial";
+  | "taxa-condominial"
+  | "temas-processuais";
 
 export interface TemaInfo {
   id: TemaId;

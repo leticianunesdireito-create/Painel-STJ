@@ -588,7 +588,7 @@ export const casos: CasoSTJ[] = [
     referencia: "REsp 1.737.992-RO, Rel. Min. Paulo de Tarso Sanseverino, Terceira Turma, j. 20/08/2019",
     fonte: "https://scon.stj.jus.br/jurisprudencia/externo/informativo/?aplicacao=informativo&acao=pesquisar&livre=%40CNOT%3D%27017163%27",
     teseFixada:
-      "A pretensão de restituição de comissão de corretagem e SATI vinculada à resolução do contrato por inadimplemento da incorporadora não se submete à prescrição trienal do art. 206, §3º, CC. Entendimento posteriormente refinado pelo STJ em 2025 (ver caso corretagem-05): prazo prescricional decenal.",
+      "A pretensão de restituição de comissão de corretagem e SATI vinculada à resolução do contrato por inadimplemento da incorporadora não se submete à prescrição trienal do art. 206, §3º, CC (Tema 938). Ver também o Tema 1099 (caso corretagem-05), que fixou o prazo decenal para a restituição de corretagem em caso de atraso na entrega.",
     baseLegal: ["Art. 206, §3º, do Código Civil — afastado neste contexto específico."],
     estrategiaDefesa: [
       "Não invocar isoladamente a prescrição trienal (art. 206, §3º, CC) para pedidos de restituição de corretagem/SATI vinculados a resolução contratual — a tese foi afastada pelo STJ neste tema.",
@@ -630,11 +630,11 @@ export const casos: CasoSTJ[] = [
     titulo: "STJ define prazo decenal para devolução de comissão de corretagem",
     data: "26/08/2025",
     resumo:
-      "A Segunda Seção definiu que o prazo para o consumidor pedir a restituição de comissão de corretagem, no contexto de atraso na entrega do imóvel, é de dez anos (Tema 938), superando a incerteza sobre prazos mais curtos aplicados anteriormente.",
+      "A Segunda Seção definiu que o prazo para o consumidor pedir a restituição de comissão de corretagem, no contexto de atraso na entrega do imóvel, é de dez anos (Tema 1099), superando a incerteza sobre prazos mais curtos aplicados anteriormente.",
     referencia: "Segunda Seção",
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/26082025-Prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos--define-Segunda-Secao.aspx",
     teseFixada:
-      "O prazo prescricional para a pretensão de restituição de comissão de corretagem vinculada a atraso na entrega do imóvel é o decenal (art. 205 do CC), fixando parâmetro uniforme para o Tema 938.",
+      "O prazo prescricional para a pretensão de restituição de comissão de corretagem vinculada a atraso na entrega do imóvel é o decenal (art. 205 do CC), fixando parâmetro uniforme no Tema 1099.",
     baseLegal: ["Art. 205 do Código Civil — prazo prescricional geral decenal."],
     estrategiaDefesa: [
       "Atualizar todas as teses de prescrição de restituição de corretagem/SATI para o parâmetro decenal fixado — não mais alegar prazos mais curtos (trienal/quinquenal) como defesa principal.",
@@ -734,6 +734,161 @@ export const casos: CasoSTJ[] = [
     ],
     avaliacaoBase: [
       "Provisionar despesas condominiais apenas até a data de registro de cada unidade em nome do comprador; a partir daí, a obrigação é do adquirente, ainda que sem posse física (chaves).",
+    ],
+  },
+  {
+    id: "condominial-04",
+    tema: "taxa-condominial",
+    titulo: "Vendedor pode responder por dívida condominial após posse do comprador",
+    data: "05/05/2025",
+    resumo:
+      "A Segunda Seção confirmou que o vendedor (promitente vendedor/titular registral) pode responder solidariamente por despesas condominiais posteriores à imissão do comprador na posse, quando o contrato não foi levado a registro.",
+    referencia: "REsp 1.910.280",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/05052025-Segunda-Secao-confirma-que-vendedor-pode-responder-por-obrigacoes-do-imovel-posteriores-a-posse-do-comprador.aspx",
+    teseFixada:
+      "Pela natureza propter rem da obrigação condominial, respondem pela dívida tanto o proprietário registral quanto o possuidor imitido por contrato de compra e venda não registrado, independentemente de ciência do condomínio sobre o negócio.",
+    baseLegal: ["Art. 1.345 do Código Civil."],
+    estrategiaDefesa: [
+      "Ao vender unidades com contrato não imediatamente registrado, orientar o comprador a registrar o quanto antes para transferir formalmente a responsabilidade condominial, reduzindo o risco de cobrança solidária contra a incorporadora/vendedora.",
+      "Em cobranças contra a incorporadora por débitos pós-imissão na posse, alegar a imissão na posse do comprador e cobrar deste em regresso.",
+    ],
+    estrategiaAcordo: [
+      "Negociar com o condomínio o redirecionamento da cobrança ao comprador imitido na posse, apresentando prova da transação, mesmo sem registro formal.",
+    ],
+    avaliacaoBase: [
+      "Provisionar risco de solidariedade por débitos condominiais em vendas com registro pendente, até a efetiva regularização registral pelo comprador.",
+    ],
+  },
+  {
+    id: "condominial-05",
+    tema: "taxa-condominial",
+    titulo: "Revisão de repetitivo sobre a responsabilidade por débito condominial",
+    data: "09/06/2025",
+    resumo:
+      "A Segunda Seção decidiu revisar o Tema Repetitivo 886 para definir se há legitimidade concorrente entre promitente vendedor e promitente comprador no polo passivo de cobrança de débitos condominiais posteriores à imissão na posse, independentemente de ciência inequívoca do condomínio.",
+    referencia: "REsp 2.015.740 e REsp 2.100.395, Rel. Min. Isabel Gallotti",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/09062025-Em-revisao-de-repetitivo--STJ-vai-analisar-responsabilidade-conjunta-entre-vendedor-e-comprador-por-divida.aspx",
+    teseFixada: "Em julgamento (revisão do Tema 886) — pendente de conclusão.",
+    baseLegal: ["Art. 1.345 do Código Civil."],
+    estrategiaDefesa: [
+      "Acompanhar a revisão do Tema 886 antes de firmar posição definitiva sobre legitimidade passiva em cobranças condominiais de unidades vendidas sem registro — requerer sobrestamento de ações correlatas quando cabível.",
+    ],
+    estrategiaAcordo: [
+      "Evitar acordos definitivos que fixem interpretação sobre legitimidade passiva enquanto a revisão do Tema 886 estiver em curso.",
+    ],
+    avaliacaoBase: [
+      "Manter como contingência possível (não provável) os casos de cobrança condominial contra a incorporadora por unidades já imitidas na posse do comprador, até a conclusão da revisão do Tema 886.",
+    ],
+  },
+
+  // ---------- Temas processuais ----------
+  {
+    id: "processual-01",
+    tema: "temas-processuais",
+    titulo: "Relator afasta critérios objetivos na análise de justiça gratuita",
+    data: "26/12/2023",
+    resumo:
+      "No julgamento do Tema 1178, o relator votou para afastar critérios objetivos no indeferimento imediato da gratuidade de justiça requerida por pessoa natural, exigindo análise individualizada da situação de hipossuficiência.",
+    referencia: "Corte Especial, Rel. Min. Og Fernandes",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/26122023-Relator-vota-para-afastar-criterios-objetivos-na-analise-de-justica-gratuita--vista-suspende-julgamento.aspx",
+    teseFixada:
+      "É vedado o uso de critérios objetivos para indeferimento imediato da gratuidade requerida por pessoa natural; havendo elementos que afastem a presunção de hipossuficiência, o juízo deve intimar a parte para comprovar sua condição antes de indeferir.",
+    baseLegal: ["Art. 99, §3º, do CPC — presunção de hipossuficiência da pessoa natural."],
+    estrategiaDefesa: [
+      "Ao impugnar gratuidade de justiça concedida ao autor pessoa natural, não se limitar a critérios objetivos de renda — apresentar elementos concretos (patrimônio, padrão de consumo, contratação de imóvel de alto valor) que afastem a presunção de hipossuficiência.",
+      "Requerer que o juízo intime a parte contrária a comprovar sua condição antes de indeferir a impugnação, conforme o rito fixado.",
+    ],
+    estrategiaAcordo: [
+      "Não é tema tipicamente negociável em acordo — trata-se de incidente processual; o foco é reduzir o risco de condenação em honorários/custas via impugnação bem fundamentada.",
+    ],
+    avaliacaoBase: [
+      "Mapear, em ações de massa (atraso, distrato), o percentual de autores com gratuidade concedida sem impugnação, como indicador de custas processuais não recuperáveis em caso de sucumbência do autor.",
+    ],
+  },
+  {
+    id: "processual-02",
+    tema: "temas-processuais",
+    titulo: "STJ: repetitivo discute requisito de gratuidade de justiça para pessoa jurídica",
+    data: "27/04/2026",
+    resumo:
+      "Julgamento do Tema 1424: a mera comprovação de inatividade ou queda de faturamento da pessoa jurídica não basta para demonstrar a hipossuficiência econômico-financeira necessária à concessão de gratuidade de justiça.",
+    referencia: "REsp 2.225.061 e REsp 2.234.386, Rel. Min. Luis Felipe Salomão",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27042026-Repetitivo-discute-se-inatividade-ou-queda-de-faturamento-autorizam-gratuidade-de-justica-para-pessoa-juridica.aspx",
+    teseFixada:
+      "A demonstração de hipossuficiência econômico-financeira da pessoa jurídica exige esclarecimentos sobre ativo, passivo, patrimônio líquido, resultado do exercício, fluxo de caixa, participações societárias e saldos bancários — mera prova de inatividade ou queda de faturamento não basta.",
+    baseLegal: ["Art. 99, §2º, do CPC — comprovação de hipossuficiência da pessoa jurídica."],
+    estrategiaDefesa: [
+      "Ao se deparar com pedido de gratuidade de justiça por pessoa jurídica na parte contrária (ex.: pequena incorporadora, condomínio, associação), impugnar exigindo a documentação financeira completa fixada no Tema 1424, não aceitando mera declaração de inatividade.",
+    ],
+    estrategiaAcordo: [
+      "Usar a exigência documental robusta como fator de pressão para acordo em disputas com pessoas jurídicas que pleiteiam gratuidade sem lastro financeiro completo.",
+    ],
+    avaliacaoBase: [
+      "Reduzir a expectativa de sucumbência recíproca sem custas em ações movidas por pessoas jurídicas contra a MRV, dado o novo padrão mais rígido de comprovação.",
+    ],
+  },
+  {
+    id: "processual-03",
+    tema: "temas-processuais",
+    titulo: "Interesse de agir em ações de consumo: debate no STJ",
+    data: "27/05/2026",
+    resumo:
+      "Segunda parte da audiência pública sobre o Tema 1396 debate se o interesse de agir em ações de consumo exige tentativa prévia de solução extrajudicial (reclamação direta à empresa, PROCON, plataformas de mediação) antes do ajuizamento.",
+    referencia: "Corte Especial",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27052026-Interesse-de-agir-em-acoes-de-consumo-segunda-parte-da-audiencia-debate-mecanismos-extrajudiciais.aspx",
+    teseFixada:
+      "Em julgamento (Tema 1396) — discute-se se a ausência de tentativa prévia de solução extrajudicial afasta o interesse de agir do consumidor.",
+    baseLegal: ["Art. 17 do CPC — interesse de agir como condição da ação."],
+    estrategiaDefesa: [
+      "Enquanto o Tema 1396 não é julgado, argumentar pela falta de interesse de agir sempre que o autor não comprovar tentativa prévia de contato/reclamação direta com a MRV antes de ajuizar a ação, quando o caso concreto permitir essa tese.",
+      "Documentar e disponibilizar canais formais de atendimento/reclamação ao consumidor (SAC, ouvidoria) para reforçar a exigibilidade de tentativa prévia.",
+    ],
+    estrategiaAcordo: [
+      "Usar a ausência de tentativa prévia de solução extrajudicial como incentivo para que o autor aceite negociar diretamente antes de prosseguir com o litígio.",
+    ],
+    avaliacaoBase: [
+      "Acompanhar o Tema 1396 antes de padronizar a tese de falta de interesse de agir como defesa preliminar em massa — reclassificar como contingência possível até a fixação da tese.",
+    ],
+  },
+  {
+    id: "processual-04",
+    tema: "temas-processuais",
+    titulo: "Audiência no STJ debate interesse de agir em ações de consumo",
+    data: "13/03/2026",
+    resumo:
+      "O STJ convocou audiência pública para debater, no âmbito do Tema 1396, se o interesse de agir em ações de consumo exige prévia tentativa de solução extrajudicial, ouvindo especialistas, órgãos de defesa do consumidor e representantes empresariais.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13032026-Audiencia-vai-debater-se-interesse-de-agir-em-acao-de-consumo-exige-previa-tentativa-de-solucao-extrajudicial.aspx",
+    teseFixada: "Em julgamento (Tema 1396) — fase de instrução por audiência pública.",
+    baseLegal: ["Art. 17 do CPC."],
+    estrategiaDefesa: [
+      "Monitorar os subsídios trazidos pela audiência pública (posições de entidades empresariais e de defesa do consumidor) para calibrar a tese de falta de interesse de agir em novas contestações.",
+    ],
+    estrategiaAcordo: [
+      "Nenhuma ação imediata necessária — aguardar desfecho do repetitivo antes de padronizar política de acordos baseada nesta tese.",
+    ],
+    avaliacaoBase: [
+      "Sem impacto financeiro direto ainda — acompanhar para reavaliação de risco processual quando o Tema 1396 for julgado.",
+    ],
+  },
+  {
+    id: "processual-05",
+    tema: "temas-processuais",
+    titulo: "Omissão do Judiciário em pedido de gratuidade da justiça presume deferimento",
+    data: "04/02/2016",
+    resumo:
+      "Quando o juízo se omite em decidir sobre pedido de gratuidade de justiça formulado pela parte, presume-se o deferimento do benefício, cabendo à parte contrária impugnar tempestivamente se discordar.",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2016/2016-02-04_19-42_Omissao-do-Judiciario-em-pedido-de-gratuidade-da-justica-presume-deferimento.aspx",
+    teseFixada:
+      "O silêncio judicial sobre pedido de gratuidade não pode prejudicar a parte requerente; presume-se deferido o benefício até manifestação expressa em contrário.",
+    baseLegal: ["Art. 99 do CPC — processamento do pedido de gratuidade."],
+    estrategiaDefesa: [
+      "Não presumir a ausência de decisão sobre gratuidade como sinal de que o benefício não foi concedido — impugnar expressa e tempestivamente sempre que houver dúvida, para não perder o prazo de impugnação.",
+    ],
+    estrategiaAcordo: [
+      "Não aplicável — questão estritamente processual incidental.",
+    ],
+    avaliacaoBase: [
+      "Padronizar rotina interna para impugnar gratuidade de justiça do autor em toda contestação, independentemente de decisão expressa do juízo, evitando perda de prazo por presunção de deferimento tácito.",
     ],
   },
 ];

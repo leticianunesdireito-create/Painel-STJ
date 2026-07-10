@@ -28,7 +28,16 @@ export const repetitivos: Repetitivo[] = [
     numero: "Tema 938",
     temaAssunto: "corretagem",
     questao:
-      "Prazo prescricional aplicável à pretensão de restituição de comissão de corretagem e taxa SATI cobradas do adquirente na incorporação imobiliária.",
+      "Prazo prescricional aplicável à pretensão de restituição de comissão de corretagem e taxa SATI cobradas do adquirente na incorporação imobiliária (afastada a prescrição trienal, hipótese de decadência).",
+    status: "julgado",
+    data: "20/08/2019",
+    fonte: "https://scon.stj.jus.br/jurisprudencia/externo/informativo/?aplicacao=informativo&acao=pesquisar&livre=%40CNOT%3D%27017163%27",
+  },
+  {
+    numero: "Tema 1099",
+    temaAssunto: "corretagem",
+    questao:
+      "Prazo prescricional aplicável à restituição de comissão de corretagem em caso de resolução contratual por atraso na entrega do imóvel.",
     status: "julgado",
     data: "26/08/2025",
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/26082025-Prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos--define-Segunda-Secao.aspx",
@@ -59,5 +68,50 @@ export const repetitivos: Repetitivo[] = [
     status: "julgado",
     data: "19/02/2026",
     fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19022026-Repetitivo-define-efeitos-da-quitacao-da-divida-em-imovel-com-alienacao-fiduciaria-apos-a-Lei-13-4652017.aspx",
+  },
+  {
+    numero: "Tema 886",
+    temaAssunto: "taxa-condominial",
+    questao:
+      "Legitimidade concorrente entre promitente vendedor e promitente comprador no polo passivo de cobrança de débitos condominiais posteriores à imissão do comprador na posse, sem registro do contrato.",
+    status: "em julgamento",
+    data: "09/06/2025",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2025/09062025-Em-revisao-de-repetitivo--STJ-vai-analisar-responsabilidade-conjunta-entre-vendedor-e-comprador-por-divida.aspx",
+  },
+  {
+    numero: "Tema 1420",
+    temaAssunto: "distrato",
+    questao:
+      "Aplicação da Lei 9.514/1997 ou do CDC à rescisão de contrato de compra e venda de imóvel com garantia de alienação fiduciária não levada a registro.",
+    status: "em julgamento",
+    data: "23/04/2026",
+    fonte: "https://www.stj.jus.br/sites/portalp/paginas/comunicacao/noticias/2026/23042026-rescisao-de-contrato-imobiliario-com-alienacao-fiduciaria-sem-registro-em-cartorio-e-tema-de-repetitivo.aspx",
+  },
+  {
+    numero: "Tema 1178",
+    temaAssunto: "temas-processuais",
+    questao:
+      "Legitimidade da adoção de critérios objetivos na avaliação de hipossuficiência para concessão de gratuidade de justiça à pessoa natural.",
+    status: "em julgamento",
+    data: "26/12/2023",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2023/26122023-Relator-vota-para-afastar-criterios-objetivos-na-analise-de-justica-gratuita--vista-suspende-julgamento.aspx",
+  },
+  {
+    numero: "Tema 1424",
+    temaAssunto: "temas-processuais",
+    questao:
+      "Se a mera comprovação de inatividade ou queda de faturamento da pessoa jurídica basta para demonstrar hipossuficiência econômico-financeira e justificar gratuidade de justiça.",
+    status: "julgado",
+    data: "27/04/2026",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27042026-Repetitivo-discute-se-inatividade-ou-queda-de-faturamento-autorizam-gratuidade-de-justica-para-pessoa-juridica.aspx",
+  },
+  {
+    numero: "Tema 1396",
+    temaAssunto: "temas-processuais",
+    questao:
+      "Se o interesse de agir em ações de consumo exige tentativa prévia de solução extrajudicial (reclamação direta à empresa, PROCON, mediação) antes do ajuizamento.",
+    status: "em julgamento",
+    data: "27/05/2026",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27052026-Interesse-de-agir-em-acoes-de-consumo-segunda-parte-da-audiencia-debate-mecanismos-extrajudiciais.aspx",
   },
 ];

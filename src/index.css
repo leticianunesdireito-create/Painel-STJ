@@ -23,6 +23,7 @@
   --tema-registro-imobiliario: #008300;
   --tema-corretagem: #e34948;
   --tema-taxa-condominial: #e87ba4;
+  --tema-temas-processuais: #eb6834;
 
   color-scheme: light dark;
 }
@@ -44,6 +45,7 @@
   --tema-registro-imobiliario: #008300;
   --tema-corretagem: #e66767;
   --tema-taxa-condominial: #d55181;
+  --tema-temas-processuais: #d95926;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,6 +66,7 @@
     --tema-registro-imobiliario: #008300;
     --tema-corretagem: #e66767;
     --tema-taxa-condominial: #d55181;
+    --tema-temas-processuais: #d95926;
   }
 }
 

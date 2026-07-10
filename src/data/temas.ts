@@ -64,4 +64,13 @@ export const temas: TemaInfo[] = [
     corVar: "--tema-taxa-condominial",
     icone: "🏢",
   },
+  {
+    id: "temas-processuais",
+    label: "Temas processuais",
+    labelCurto: "Temas processuais",
+    descricao:
+      "Justiça gratuita, interesse de agir e necessidade de reclamação/tentativa prévia, e outras questões de processo civil relevantes à defesa.",
+    corVar: "--tema-temas-processuais",
+    icone: "⚖️",
+  },
 ];
