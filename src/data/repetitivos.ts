@@ -102,8 +102,8 @@ export const repetitivos: Repetitivo[] = [
     questao:
       "Se a mera comprovação de inatividade ou queda de faturamento da pessoa jurídica basta para demonstrar hipossuficiência econômico-financeira e justificar gratuidade de justiça.",
     status: "julgado",
-    data: "27/04/2026",
-    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27042026-Repetitivo-discute-se-inatividade-ou-queda-de-faturamento-autorizam-gratuidade-de-justica-para-pessoa-juridica.aspx",
+    data: "03/07/2026",
+    fonte: "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03072026-Primeiro-repetitivo-julgado-em-sessao-totalmente-virtual-define-requisitos-para-justica-gratuita-a-pessoas.aspx",
   },
   {
     numero: "Tema 1396",
